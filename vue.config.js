@@ -2,6 +2,11 @@ module.exports = {
   publicPath: '',
 
   pwa: {
-    name: 'BootWind'
+    name: 'BootWind',
+    themeColor: '#434190',
+    msTileColor: '#434190',
+    manifestOptions: {
+      background_color: '#434190'
+    }
   }
 }
