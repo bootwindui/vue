@@ -1,7 +1,6 @@
 <template>
   <div class="flex">
     <div class="w-full items-center text-center">
-       <!-- <img class="mx-auto my-3" width="150px" src="@/assets/logo-bootwind-template.png" alt="logo-bootwind-template"> -->
        <div class="p-2 px-5 text-indigo-800 rounded-full mt-5" role="alert">
           <h1 class="font-bold text-3xl">Welcome to BootWind Template</h1>
          

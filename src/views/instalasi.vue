@@ -1,22 +1,7 @@
 <template>
-    <div class="flex flex-wrap text-center">
-        
-        <h1 class="w-full px-2 pt-2 font-bold text-lg">Install Tailwind Css in Vue JS</h1>
-        
-        <!-- <ul class="w-full lg:w-1/2">
-         
-            <li class="p-2">
-              
-            </li>
-
-             <li class="p-2">
-               
-            </li>
-             <li class="p-2">
-
-            </li>
-        </ul> -->
-        <right-menu class="w-full shadow-sm p-2 lg:px-20" youtube="vaiFX26BSZs" next="/component/alert" back="/" />
+    <div class="flex flex-wrap text-center lg:px-56 mt-5">
+        <h1 class="w-full px-2 pt-2 font-bold text-3xl">Install Tailwind Css in Vue JS</h1>
+        <right-menu class="w-full shadow-sm p-2" youtube="vaiFX26BSZs" next="/component/alert" back="/" />
     </div>
 </template>
 

@@ -7,8 +7,10 @@ import './assets/tailwind.css'
 
 import BwCom from "./components/BwCom.vue";
 
+import "prismjs";
+import "prismjs/themes/prism.css";
+
 import VuePrismEditor from "vue-prism-editor";
-// import "prismjs/themes/prism-okaidia.css";
 // import "vue-prism-editor/dist/VuePrismEditor.css"; // import the styles
 
 Vue.component("prism-editor", VuePrismEditor);

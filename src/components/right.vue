@@ -1,6 +1,8 @@
 <template>
 <div>
-    <div class="videowrapper ">
+    <div style="position:sticky;top:100px">
+
+    <div class="videowrapper">
             <iframe class="rounded-lg" width="560" height="315" :src="`https://www.youtube.com/embed/${youtube}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
@@ -20,6 +22,8 @@
             <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
         </svg>
     </router-link>
+    
+    </div>
 </div>
 </template>
 
