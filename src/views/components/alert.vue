@@ -2,7 +2,7 @@
     <div class="flex flex-wrap">
         
         <h1 class="w-full px-4 pt-2 font-bold text-lg">Alert BootWind Component</h1>
-        <ul class="w-full lg:w-1/2">
+        <ul class="w-full lg:w-1/2 ">
          
             <li class="p-2">
                 <!-- 1 -->
@@ -16,6 +16,8 @@
                         <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
                     </svg>
                 </div>
+                <hr class="mt-4" />
+
             </li>
             <li class="p-2">
                 <!-- 2 -->
@@ -36,6 +38,8 @@
                         Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
                     </p>
                 </div>
+                <hr class="mt-4" />
+
             </li>
             <li class="p-2">
                 <!-- 3 -->
@@ -49,6 +53,7 @@
                         <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
                     </svg>
                 </div>
+                <hr class="mt-4" />
             
             </li>
             <li class="p-2">

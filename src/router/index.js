@@ -32,6 +32,48 @@ const routes = [{
         component: function() {
             return import ( /* webpackChunkName: "c-alert" */ '../views/components/alert.vue')
         }
+    },
+    {
+        path: '/component/badge',
+        name: 'Badge',
+        meta: {
+            title: 'Badge Component BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Vue Badge Component Tailwind CSS '
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "c-badge" */ '../views/components/badge.vue')
+        }
+    },
+    {
+        path: '/component/breadcrumb',
+        name: 'breadcrumb',
+        meta: {
+            title: 'breadcrumb Component BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Vue breadcrumb Component Tailwind CSS '
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "c-breadcrumb" */ '../views/components/breadcrumb.vue')
+        }
+    },
+    {
+        path: '/component/button',
+        name: 'button',
+        meta: {
+            title: 'button Component BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Vue button Component Tailwind CSS '
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "c-button" */ '../views/components/button.vue')
+        }
     }
 ]
 

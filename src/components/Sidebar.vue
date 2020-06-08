@@ -8,10 +8,11 @@
               </svg>
             Documentation</h2>
             <div class="flex flex-col pl-4">
-              <a href="#" :class="nonActiveClass">
+              <a target="_blank" href="https://tailwindcss.com" :class="nonActiveClass">
                 Tailwind Css</a>
-              <a href="#" :class="nonActiveClass">
+              <a target="_blank" href="https://vuejs.org" :class="nonActiveClass">
                 Vue Js</a>
+              <router-link :class="($route.path == '/component/instalasi')? activeClass : nonActiveClass" to="instalasi">Instalasi</router-link>
             </div>
         </div>
         <div class="flex flex-col">
@@ -25,6 +26,7 @@
             <div class="flex flex-col pl-4">
               <router-link :class="($route.path == '/component/alert')? activeClass : nonActiveClass" to="/component/alert">Alert</router-link>
               <router-link :class="($route.path == '/component/badge')? activeClass : nonActiveClass" to="/component/badge">Badge</router-link>
+              <router-link :class="($route.path == '/component/breadcrumb')? activeClass : nonActiveClass" to="/component/breadcrumb">Breadcrumb</router-link>
               <router-link :class="($route.path == '/component/button')? activeClass : nonActiveClass" to="/component/button">Button</router-link>
               <router-link :class="($route.path == '/component/card')? activeClass : nonActiveClass" to="/component/card">Card</router-link>
               <router-link :class="($route.path == '/component/carousel')? activeClass : nonActiveClass" to="/component/carousel">Carousel</router-link>
