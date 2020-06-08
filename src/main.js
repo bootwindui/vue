@@ -5,10 +5,19 @@ import router from './router'
 import store from './store'
 import './assets/tailwind.css'
 
+import BwCom from "./components/BwCom.vue";
+
+import VuePrismEditor from "vue-prism-editor";
+// import "prismjs/themes/prism-okaidia.css";
+// import "vue-prism-editor/dist/VuePrismEditor.css"; // import the styles
+
+Vue.component("prism-editor", VuePrismEditor);
+Vue.component("bw-com", BwCom);
+
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: function (h) { return h(App) }
+    router,
+    store,
+    render: function(h) { return h(App) }
 }).$mount('#app')

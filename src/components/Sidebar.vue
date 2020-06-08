@@ -12,7 +12,7 @@
                 Tailwind Css</a>
               <a target="_blank" href="https://vuejs.org" :class="nonActiveClass">
                 Vue Js</a>
-              <router-link :class="($route.path == '/component/instalasi')? activeClass : nonActiveClass" to="instalasi">Instalasi</router-link>
+              <router-link :class="($route.path == '/instalasi')? activeClass : nonActiveClass" to="/instalasi">Instalasi</router-link>
             </div>
         </div>
         <div class="flex flex-col">

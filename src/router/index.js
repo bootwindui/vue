@@ -20,6 +20,13 @@ const routes = [{
         }
     },
     {
+        path: '/instalasi',
+        name: 'Instalasi',
+        component: function() {
+            return import ( /* webpackChunkName: "instalasi" */ '../views/instalasi.vue')
+        }
+    },
+    {
         path: '/component/alert',
         name: 'Alert',
         meta: {
