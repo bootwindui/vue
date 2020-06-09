@@ -42,7 +42,7 @@ export default {
   },
   data(){
       return {
-          alert1: `<div class="p-2 px-3 bg-indigo-800 items-center text-indigo-100  rounded-lg  flex" >
+          alert1: `<div class="p-2 px-3 bg-indigo-700 items-center text-indigo-100  rounded-lg  flex" >
     <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs mr-3">Info</span>
     <span class="mr-2 text-left flex-auto">A simple alert - check it out!</span>
     <svg class="bi bi-x-circle cursor-pointer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ export default {
         <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
     </svg>
 </div>`,
-        alert2: `<div class="p-2 px-3 bg-indigo-800 items-center text-indigo-100  rounded-lg flex  flex-wrap" >
+        alert2: `<div class="p-2 px-3 bg-indigo-700 items-center text-indigo-100  rounded-lg flex  flex-wrap" >
     <span class="rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs">Info</span>
     <span class="p-2 font-bold flex-auto">Notification !
             <svg class="bi bi-x-circle cursor-pointer float-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

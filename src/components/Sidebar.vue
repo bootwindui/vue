@@ -1,7 +1,7 @@
 <template>
      <nav class="hidden lg:block bg-white shadow-sm p-3 fixed top-0 w-full lg:w-1/6 sidebar">
         <div class="flex flex-col">
-          <h2 class="text-indigo-800 font-bold w-full py-2 px-4 flex">
+          <h2 class="text-indigo-700 font-bold w-full py-2 mt-4 px-4 flex">
            
               <svg class="w-6 p-1 -mt-1" id="i-book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                   <path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" />
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="flex flex-col">
-          <h2 class="text-indigo-800 font-bold w-full py-2 px-4 flex">
+          <h2 class="text-indigo-700 font-bold w-full py-2 px-4 flex">
             
             <svg  class="w-6 p-1 -mt-1" id="i-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M2 26 L30 26 30 7 14 7 10 4 2 4 Z M30 12 L2 12" />
@@ -32,10 +32,24 @@
               <router-link :class="($route.path == '/component/carousel')? activeClass : nonActiveClass" to="/component/carousel">Carousel</router-link>
               <router-link :class="($route.path == '/component/collapse')? activeClass : nonActiveClass" to="/component/collapse">Collapse</router-link>
               <router-link :class="($route.path == '/component/dropdown')? activeClass : nonActiveClass" to="/component/dropdown">Dropdown</router-link>
+              <router-link :class="($route.path == '/component/form')? activeClass : nonActiveClass" to="/component/form">Form</router-link>
+              <router-link :class="($route.path == '/component/input-group')? activeClass : nonActiveClass" to="/component/input-group">Input Group</router-link>
+              <router-link :class="($route.path == '/component/jumbotron')? activeClass : nonActiveClass" to="/component/jumbotron">Jumbotron</router-link>
+              <router-link :class="($route.path == '/component/list-group')? activeClass : nonActiveClass" to="/component/list-group">List Group</router-link>
+              <router-link :class="($route.path == '/component/media-object')? activeClass : nonActiveClass" to="/component/media-object">Media Object</router-link>
+              <router-link :class="($route.path == '/component/modal')? activeClass : nonActiveClass" to="/component/modal">Modal</router-link>
+              <router-link :class="($route.path == '/component/navs')? activeClass : nonActiveClass" to="/component/navs">Navs</router-link>
+              <router-link :class="($route.path == '/component/paginations')? activeClass : nonActiveClass" to="/component/paginations">Paginations</router-link>
+              <router-link :class="($route.path == '/component/popevers')? activeClass : nonActiveClass" to="/component/popevers">Popever</router-link>
+              <router-link :class="($route.path == '/component/progress')? activeClass : nonActiveClass" to="/component/progress">Progress</router-link>
+              <router-link :class="($route.path == '/component/scrollspy')? activeClass : nonActiveClass" to="/component/scrollspy">Scrollspy</router-link>
+              <router-link :class="($route.path == '/component/spinners')? activeClass : nonActiveClass" to="/component/spinners">Spinners</router-link>
+              <router-link :class="($route.path == '/component/toasts')? activeClass : nonActiveClass" to="/component/toasts">Toasts</router-link>
+              <router-link :class="($route.path == '/component/tooltips')? activeClass : nonActiveClass" to="/component/tooltips">Tooltips</router-link>
              </div>
         </div>
          <div class="flex flex-col">
-          <h2 class="text-indigo-800 font-bold w-full py-2 px-4 flex">
+          <h2 class="text-indigo-700 font-bold w-full py-2 px-4 flex">
               <svg class="w-6 p-1 -mt-1"  id="i-portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M29 17 L29 28 3 28 3 17 M2 8 L30 8 30 16 C30 16 24 20 16 20 8 20 2 16 2 16 L2 8 Z M16 22 L16 18 M20 8 C20 8 20 4 16 4 12 4 12 8 12 8" />
             </svg>
@@ -44,9 +58,11 @@
               <router-link  :class="($route.path == '/template/login')? activeClass : nonActiveClass" to="/template/login">Login</router-link>
               <router-link  :class="($route.path == '/template/register')? activeClass : nonActiveClass" to="/template/register">Register</router-link>
               <router-link  :class="($route.path == '/template/profile')? activeClass : nonActiveClass" to="/template/profile">Profile</router-link>
-              <router-link  :class="($route.path == '/template/admin-dashboard')? activeClass : nonActiveClass" to="/template/admin-dashboard">Admin Dashboard</router-link>
+              <router-link  :class="($route.path == '/template/dashboard')? activeClass : nonActiveClass" to="/template/dashboard">Dashboard</router-link>
             </div>
         </div>
+        <br>
+        <br>
       </nav>
 </template>
 
@@ -54,7 +70,7 @@
 export default {
     data(){
         return {
-            activeClass : 'bg-gray-200 text-indigo-800 rounded-tl-md rounded-br-md w-full py-1 px-4',
+            activeClass : 'bg-gray-200 text-indigo-700 rounded-tl-md rounded-br-md w-full py-1 px-4',
             nonActiveClass : 'rounded w-full py-1 px-4'
         }
     }
