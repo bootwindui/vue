@@ -3,16 +3,24 @@
         
         <h1 class="w-full px-2 pt-2 font-bold text-lg">Button BootWind Component</h1>
         
-        <ul class="w-full lg:w-1/2">
+        <ul class="w-full lg:w-1/2 text-center">
         
             <li class="p-2">
                 <bw-com :data="button1"  />
             </li>
              <li class="p-2">
+                <bw-com :data="button1a"  />
+            </li>
+             <li class="p-2">
+                <bw-com :data="button1b"  />
+            </li>
+             <li class="p-2">
+                <bw-com :data="button1c"  />
+            </li>
+             <li class="p-2">
                 <bw-com :data="button2"  />
             </li>
             <li class="p-2">
-              <!-- 1 -->
               <h1 class="p-2">Color</h1>
                 <bw-com :data="button3"  />
              </li>
@@ -33,19 +41,18 @@ export default {
   },
   data(){
     return {
-button1 : `<button class="bg-indigo-700 hover:bg-indigo-700 text-white font-bold py-2 px-6 m-1 rounded">
-  Style 1
-</button>
-<button class="bg-gray-300 hover:bg-gray-400 font-bold  py-2 px-6 m-1 rounded-full">
-  Style 2
-</button>
-<button class="shadow-sm bg-transparent hover:bg-gray-700 text-gray-700  font-semibold hover:text-gray-100 py-2 px-6 m-1 border border-gray-300 hover:border-transparent rounded">
-  Style 3
-</button>
-<button class="bg-blue-700 hover:bg-blue-700 text-blue-100 font-semibold py-2 px-6  rounded inline-flex items-center m-2" >
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-  <span>Icon</span>
-</button>`,
+button1 : `<button class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-6 rounded">
+              Style 1
+            </button>`,
+button1a : `<button class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-6 rounded-full">
+              Style 2
+            </button>`,
+button1b : `<button class="text-indigo-700 border-2 border-indigo-700 hover:bg-indigo-800 hover:text-white font-bold py-2 px-6 rounded-full">
+              Style 3
+            </button>`,
+button1c : `<button class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-6 rounded-tr-lg rounded-bl-lg">
+              Style 4
+            </button>`,
 button2: ` <button  class="
     font-bold cursor-pointer px-6 p-1 shadow-lg bg-indigo-700 text-indigo-100 
     hover:bg-indigo-800 rounded-full flex w-full">

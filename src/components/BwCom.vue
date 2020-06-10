@@ -2,9 +2,7 @@
     <div>
       
         <div v-html="data"></div>
-        <div class="flex mt-2 mt-3 flex-wrap">
-            <div class="w-full lg:w-2/4"></div>
-             
+        <div class="flex mt-2 mt-3 flex-wrap ">
             <div @click="copyToClipboard(data)" :class="(coppied) ? classA : classNonA">
                 <svg class="bi bi-bookmarks m-1" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M7 13l5 3V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12l5-3zm-4 1.234l4-2.4 4 2.4V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10.234z"/>
@@ -32,8 +30,8 @@ export default {
     data(){
         return{
             coppied: false,
-            classNonA: 'flex ml-auto cursor-pointer text-center p-1 px-5 bg-gray-100 text-indigo-700  rounded-full  border hover:bg-indigo-700 hover:text-indigo-100',
-            classA: 'flex ml-auto cursor-pointer  text-center p-1 px-5 text-indigo-100 rounded-full bg-indigo-700 border',
+            classNonA: 'mx-auto flex cursor-pointer text-center p-1 px-5 bg-gray-100 text-indigo-700  rounded-full  border hover:bg-indigo-700 hover:text-indigo-100',
+            classA: 'mx-auto flex cursor-pointer  text-center p-1 px-5 text-indigo-100 rounded-full bg-indigo-700 border',
             showCode: false
         }
     },

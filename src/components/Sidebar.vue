@@ -28,7 +28,7 @@
               <router-link :class="($route.path == '/component/badge')? activeClass : nonActiveClass" to="/component/badge">Badge</router-link>
               <router-link :class="($route.path == '/component/breadcrumb')? activeClass : nonActiveClass" to="/component/breadcrumb">Breadcrumb</router-link>
               <router-link :class="($route.path == '/component/button')? activeClass : nonActiveClass" to="/component/button">Button</router-link>
-              <router-link :class="($route.path == '/component/card')? activeClass : nonActiveClass" to="/component/card">Card</router-link>
+              <router-link :class="($route.path == '/component/cards')? activeClass : nonActiveClass" to="/component/cards">Cards</router-link>
               <router-link :class="($route.path == '/component/carousel')? activeClass : nonActiveClass" to="/component/carousel">Carousel</router-link>
               <router-link :class="($route.path == '/component/collapse')? activeClass : nonActiveClass" to="/component/collapse">Collapse</router-link>
               <router-link :class="($route.path == '/component/dropdown')? activeClass : nonActiveClass" to="/component/dropdown">Dropdown</router-link>

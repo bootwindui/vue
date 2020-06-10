@@ -81,6 +81,20 @@ const routes = [{
         component: function() {
             return import ( /* webpackChunkName: "c-button" */ '../views/components/button.vue')
         }
+    },
+    {
+        path: '/component/cards',
+        name: 'cards',
+        meta: {
+            title: 'button Component BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Vue cards Component Tailwind CSS '
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "c-cards" */ '../views/components/cards.vue')
+        }
     }
 ]
 

@@ -8,7 +8,7 @@
      <nav-menu class="lg:pt-16"></nav-menu>
     </div>
     <div class="w-full lg:w-5/6">
-      <div class="flex flex-wrap fixed top-0 right-0 bg-indigo-700 text-white w-full shadow-sm p-2 lg:px-6 z-40">
+      <div class="flex flex-wrap fixed top-0 right-0 bg-indigo-800 text-white w-full shadow-sm p-2 lg:px-6 z-40">
        
             <h1 class=" p-1 font-bold text-lg text-center flex flex-wrap">
               
