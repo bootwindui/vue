@@ -6,22 +6,26 @@ Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        name: 'Home',
+        name: 'BootWind',
+        meta: {
+            title: 'BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Make a Better Website with BootWind Template and Tailwind Css '
+            }]
+        },
         component: Home
     },
     {
-        path: '/about',
-        name: 'About',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: function() {
-            return import ( /* webpackChunkName: "about" */ '../views/About.vue')
-        }
-    },
-    {
-        path: '/instalasi',
-        name: 'Instalasi',
+        path: '/started/install',
+        name: 'Installl',
+        meta: {
+            title: 'Install Tailwind Css Vue Js',
+            metaTags: [{
+                name: 'description',
+                content: 'Install Tailwind Css Vue Js - Vue BootWind Template '
+            }]
+        },
         component: function() {
             return import ( /* webpackChunkName: "instalasi" */ '../views/instalasi.vue')
         }
@@ -33,7 +37,7 @@ const routes = [{
             title: 'Alert Component BootWind Template',
             metaTags: [{
                 name: 'description',
-                content: 'Vue Alert Component Tailwind CSS '
+                content: 'Alert Tailwind CSS Component'
             }]
         },
         component: function() {
@@ -47,7 +51,7 @@ const routes = [{
             title: 'Badge Component BootWind Template',
             metaTags: [{
                 name: 'description',
-                content: 'Vue Badge Component Tailwind CSS '
+                content: 'Badge Tailwind CSS Component '
             }]
         },
         component: function() {
@@ -55,27 +59,13 @@ const routes = [{
         }
     },
     {
-        path: '/component/breadcrumb',
-        name: 'breadcrumb',
+        path: '/component/buttons',
+        name: 'buttons',
         meta: {
-            title: 'breadcrumb Component BootWind Template',
+            title: 'buttons Component BootWind Template',
             metaTags: [{
                 name: 'description',
-                content: 'Vue breadcrumb Component Tailwind CSS '
-            }]
-        },
-        component: function() {
-            return import ( /* webpackChunkName: "c-breadcrumb" */ '../views/components/breadcrumb.vue')
-        }
-    },
-    {
-        path: '/component/button',
-        name: 'button',
-        meta: {
-            title: 'button Component BootWind Template',
-            metaTags: [{
-                name: 'description',
-                content: 'Vue button Component Tailwind CSS '
+                content: 'Button Tailwind CSS Component '
             }]
         },
         component: function() {
@@ -95,7 +85,19 @@ const routes = [{
         component: function() {
             return import ( /* webpackChunkName: "c-cards" */ '../views/components/cards.vue')
         }
-    }
+    },
+    {
+        path: '*',
+        name: 'BootWind',
+        meta: {
+            title: 'BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Make a Better Website with BootWind Template and Tailwind Css '
+            }]
+        },
+        component: Home
+    },
 ]
 
 const router = new VueRouter({

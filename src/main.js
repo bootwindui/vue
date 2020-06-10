@@ -5,13 +5,13 @@ import router from './router'
 import store from './store'
 import './assets/tailwind.css'
 
-
-import BwCom from "./components/BwCom.vue";
-
+import rightMenu from '@/components/rightMenu.vue'
+import bwCode from "./components/bwCode.vue";
 import VuePrismEditor from "vue-prism-editor";
 
 Vue.component("prism-editor", VuePrismEditor);
-Vue.component("bw-com", BwCom);
+Vue.component("bw-code", bwCode);
+Vue.component("right-menu", rightMenu);
 
 Vue.config.productionTip = false
 

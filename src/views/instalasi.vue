@@ -4,17 +4,3 @@
         <right-menu class="w-full shadow-sm p-2" youtube="vaiFX26BSZs" next="/component/alert" back="/" />
     </div>
 </template>
-
-<script>
-import rightMenu from '@/components/right.vue'
-export default {
-  components: {
-    rightMenu
-  },
-  data(){
-      return {
-      }
-  }
-}
-</script>
-

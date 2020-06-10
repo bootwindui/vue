@@ -3,10 +3,10 @@ module.exports = {
 
   pwa: {
     name: 'BootWind',
-    themeColor: '#434190',
-    msTileColor: '#434190',
+    themeColor: '#5e72e4',
+    msTileColor: '#5e72e4',
     manifestOptions: {
-      background_color: '#434190'
+      background_color: '#5e72e4'
     }
   }
 }

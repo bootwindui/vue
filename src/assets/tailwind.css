@@ -1,5 +1,17 @@
+.light-mode {
+    --color-primary: #FFFFFF;
+    --color-secondary: #1A202C;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.dark-mode {
+    --color-primary: #1A202C;
+    --color-secondary: #C3DAFE;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
