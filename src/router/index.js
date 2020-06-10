@@ -20,7 +20,7 @@ const routes = [{
         path: '/started/install',
         name: 'Installl',
         meta: {
-            title: 'Install Tailwind Css Vue Js',
+            title: 'Install Tailwind Vue Js',
             metaTags: [{
                 name: 'description',
                 content: 'Install Tailwind Css Vue Js - Vue BootWind Template '
@@ -34,7 +34,7 @@ const routes = [{
         path: '/component/alert',
         name: 'Alert',
         meta: {
-            title: 'Alert Component BootWind Template',
+            title: 'Alert Tailwind Component',
             metaTags: [{
                 name: 'description',
                 content: 'Alert Tailwind CSS Component'
@@ -48,7 +48,7 @@ const routes = [{
         path: '/component/badge',
         name: 'Badge',
         meta: {
-            title: 'Badge Component BootWind Template',
+            title: 'Badge Tailwind Component',
             metaTags: [{
                 name: 'description',
                 content: 'Badge Tailwind CSS Component '
@@ -62,10 +62,10 @@ const routes = [{
         path: '/component/buttons',
         name: 'buttons',
         meta: {
-            title: 'buttons Component BootWind Template',
+            title: 'Buttons Tailwind Componen',
             metaTags: [{
                 name: 'description',
-                content: 'Button Tailwind CSS Component '
+                content: 'Buttons Tailwind CSS Component '
             }]
         },
         component: function() {
@@ -76,16 +76,34 @@ const routes = [{
         path: '/component/cards',
         name: 'cards',
         meta: {
-            title: 'button Component BootWind Template',
+            title: 'Cards Tailwind Component',
             metaTags: [{
                 name: 'description',
-                content: 'Vue cards Component Tailwind CSS '
+                content: 'Cards Tailwind CSS Component '
             }]
         },
         component: function() {
             return import ( /* webpackChunkName: "c-cards" */ '../views/components/cards.vue')
         }
     },
+
+    {
+        path: '/component/carousel',
+        name: 'carousel',
+        meta: {
+            title: 'Carousel Tailwind CSS Component',
+            metaTags: [{
+                name: 'description',
+                content: 'Carousel Tailwind CSS Component'
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "c-carousel" */ '../views/components/carousel.vue')
+        }
+    },
+
+
+    // 404
     {
         path: '*',
         name: 'BootWind',

@@ -21,7 +21,7 @@
             </li>
             
         </ul>
-        <right-menu class="w-full lg:w-1/2 shadow-sm p-2 lg:p-12" youtube="J7kZrNYiiuc" next="badge" back="/instalasi" />
+        <right-menu class="w-full lg:w-1/2 shadow-sm p-2 lg:p-12" youtube="J7kZrNYiiuc" next="badge" back="/started/install" />
     </div>
 </template>
 

@@ -5,16 +5,19 @@
         
         <ul class="w-full lg:w-1/2">
             <li class="p-2">
+                <h1 class="p-2"> Heading </h1>
                 <bw-code :data="badge1"  />
             </li>
             <li class="p-2 ">
+                <h1 class="p-2"> Button </h1>
                  <bw-code :data="badge2"  />
             </li>
             <li class="p-2">
+                <h1 class="p-2"> Coloring </h1>
                  <bw-code :data="badge3"  />
             </li>
         </ul>
-        <right-menu class="w-full lg:w-1/2 shadow-sm p-2 lg:p-12" youtube="fbLOB3y6OPs" next="breadcrumb" back="alert" />
+        <right-menu class="w-full lg:w-1/2 shadow-sm p-2 lg:p-12" youtube="fbLOB3y6OPs" next="buttons" back="alert" />
     </div>
 </template>
 
@@ -42,7 +45,7 @@ badge2: `<div class="flex flex-wrap">
     </button>
 </div>`,
 badge3: `
-<div class="flex">
+<div class="flex flex-wrap">
 <span class="bg-default p-1 px-3 text-sm  text-white rounded-full mx-1">Default</span>
 <span class="bg-primary p-1 px-3 text-sm text-white rounded-full mx-1">Primary</span>
 <span class="bg-secondary p-1 px-3 text-sm text-primary rounded-full mx-1">Secodary</span>

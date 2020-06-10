@@ -1,19 +1,21 @@
 <template>
     <div class="flex flex-wrap">
         
-        <h1 class="w-full px-2 pt-2 font-bold text-lg">Button BootWind Component</h1>
+        <h1 class="w-full px-2 pt-2 font-bold text-3xl">Button BootWind Component</h1>
         
-        <ul class="w-full lg:w-1/2 text-center">
+        <ul class="w-full lg:w-1/2">
         
             <li class="p-2">
+                <h1 class="p-2">Style</h1>
                 <bw-code :data="button1"  />
             </li>
          
              <li class="p-2">
+                <h1 class="p-2">Block</h1>
                 <bw-code :data="button2"  />
             </li>
             <li class="p-2">
-              <h1 class="p-2">Color</h1>
+                <h1 class="p-2">Coloring</h1>
                 <bw-code :data="button3"  />
              </li>
             <li class="p-2">
@@ -21,7 +23,7 @@
                 <bw-code :data="button4"  />             
             </li>
         </ul>
-        <right-menu class="w-full lg:w-1/2 shadow-md p-2 lg:p-12" youtube="D0dJYE5Dc1o" next="cards" back="breadcrumb" />
+        <right-menu class="w-full lg:w-1/2 shadow-md p-2 lg:p-12" youtube="D0dJYE5Dc1o" next="cards" back="badge" />
     </div>
 </template>
 

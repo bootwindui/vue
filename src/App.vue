@@ -7,8 +7,8 @@
          </div>
         </div>
         <div class="w-full lg:w-5/6">
-          <top-menu class="mt-2" />
-          <router-view class="p-3 min-h-screen"/>
+          <top-menu class="pt-4 bg-theme_primary" />
+          <router-view class="p-3 min-h-screen pt-20"/>
         </div>
       </div>
   </div>

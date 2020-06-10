@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-wrap">
         
-        <h1 class="w-full px-2 pt-2 font-bold text-lg">Cards BootWind Component</h1>
+        <h1 class="w-full px-2 pt-2 font-bold text-3xl">Cards BootWind Component</h1>
         
         <ul class="w-full lg:w-1/2">
            
@@ -24,28 +24,27 @@
 export default {
   data(){
       return{
-        card1: `
-        <div class="shadow-lg flex flex-wrap bg-white border-2 border-indigo-200 rounded-lg text-center">
-            <div class="w-full py-2 px-4 bg-indigo-100 hover:bg-indigo-200 ">
-                Featured
-            </div>
-            <div class="w-full py-2 px-4 flex flex-col">
-                <h5 class="text-xl font-bold flex-col py-1">Special title treatment</h5>
-                <p class="flex-col">With supporting text below as a natural lead-in to additional content.</p>
-                <span class="py-3">
-                    <a href="#" class="bg-primary hover:bg-primary rounded-full text-white px-4 py-2">Go somewhere</a>
-                </span>
-            </div>
-            <div class="w-full py-2 px-4 bg-indigo-100 hover:bg-indigo-200">
-                2 days ago
-            </div>
-        </div>`,
+card1: `<div class="shadow-lg flex flex-wrap  border-2 border-indigo-200 rounded-lg text-center">
+    <div class="w-full py-2 px-4 ">
+        Featured
+    </div>
+    <div class="w-full py-2 px-4 flex flex-col">
+        <h5 class="text-xl font-bold flex-col py-1">Special title treatment</h5>
+        <p class="flex-col">With supporting text below as a natural lead-in to additional content.</p>
+        <span class="py-3">
+            <a href="#" class="bg-primary hover:bg-primary rounded-full text-white px-4 py-2">Go somewhere</a>
+        </span>
+    </div>
+    <div class="w-full py-2 px-4 ">
+        2 days ago
+    </div>
+</div>`,
         card2:`
-        <div class="mx-1 rounded-lg shadow-lg max-w-sm mx-auto">
+        <div class="mx-1 rounded-lg shadow-lg max-w-sm mx-auto border">
             <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
                 <div class="font-bold text-md lg:mb-2">The Coldest Sunset</div>
-                <p class="text-indigo-700 text-sm">
+                <p class="text-theme_secondary text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia... 
                 </p>
             </div>
@@ -59,7 +58,7 @@ export default {
         <div class="w-full lg:max-w-full lg:flex">
                 <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/card-left.jpg')" title="Woman holding a mug">
                     </div>
-                    <div class="border-r border-b border-l border-indigo-400 lg:border-l-0 lg:border-t lg:border-indigo-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="border-r border-b border-l border-indigo-400 lg:border-l-0 lg:border-t lg:border-indigo-400  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div class="mb-8">
                         <p class="text-sm text-indigo-600 flex items-center">
                             <svg class="fill-current text-indigo-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -67,13 +66,13 @@ export default {
                             </svg>
                             Members only
                         </p>
-                        <div class="text-indigo-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                        <p class="text-indigo-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="text-theme_secondary font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                        <p class="text-theme_secondary text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                         <div class="flex items-center">
                         <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
                         <div class="text-sm">
-                            <p class="text-indigo-900 leading-none">Jonathan Reinink</p>
+                            <p class="text-theme_secondary leading-none">Jonathan Reinink</p>
                             <p class="text-indigo-600">Aug 18</p>
                         </div>
                     </div>
