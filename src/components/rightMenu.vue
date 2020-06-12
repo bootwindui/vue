@@ -1,9 +1,12 @@
 <template>
 <div >
+    
     <div style="position:sticky;top:100px">
-
-    <div class="videowrapper">
-            <iframe class="rounded-lg" width="560" height="315" :src="`https://www.youtube.com/embed/${youtube}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <ul class="pb-5">
+        <li class="cursor-pointer px-2 py-1 text-primary font-semibold" v-for="(i,id) in list" :key="id" v-scroll-to="'#list-'+id">{{ i.title }}</li>
+    </ul>
+    <div class="videowrapper bg-theme_secondary" style="border-radius:30px">
+        <iframe style="border-radius:30px" width="560" height="315" :src="`https://www.youtube.com/embed/${youtube}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
     <router-link :to="back" class="flex bg-primary hover:bg-primary p-1 px-4 text-indigo-100 float-left rounded-full">
@@ -29,7 +32,7 @@
 
 <script>
 export default {
-    props: ['youtube','back','next']
+    props: ['youtube','back','next','list']
 }
 </script>
 

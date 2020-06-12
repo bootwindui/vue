@@ -1,13 +1,17 @@
 .light-mode {
-    --color-primary: #FFFFFF;
-    --color-secondary: #1A202C;
+    --color-primary_light: #fff;
+    --color-primary: #fff;
+    --color-primary_dark: #f6f9fc;
+    --color-secondary: #172b4d;
     background: var(--color-primary);
     color: var(--color-secondary);
 }
 
 .dark-mode {
+    --color-primary_light: #2D3748;
     --color-primary: #1A202C;
-    --color-secondary: #C3DAFE;
+    --color-primary_dark: #2D3748;
+    --color-secondary: #f6f9fc;
     background: var(--color-primary);
     color: var(--color-secondary);
 }

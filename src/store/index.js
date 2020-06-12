@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         leftMenu: '',
-        themeMode: localStorage.getItem("themeMode") || 'light-mode'
+        themeMode: localStorage.getItem("themeMode") || 'dark-mode'
     },
     mutations: {
         toggleLeftMenu(state, to) {

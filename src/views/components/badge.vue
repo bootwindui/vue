@@ -3,21 +3,12 @@
         
         <h1 class="w-full px-2 pt-2 font-bold text-3xl">Badge BootWind Component</h1>
         
-        <ul class="w-full lg:w-1/2">
-            <li class="p-2">
-                <h1 class="p-2"> Heading </h1>
-                <bw-code :data="badge1"  />
-            </li>
-            <li class="p-2 ">
-                <h1 class="p-2"> Button </h1>
-                 <bw-code :data="badge2"  />
-            </li>
-            <li class="p-2">
-                <h1 class="p-2"> Coloring </h1>
-                 <bw-code :data="badge3"  />
+        <ul class="w-full lg:w-2/3">
+            <li class="p-2" v-for="(list,id) in listCom" :key="id" :id="'list-'+id">
+                <bw-code :data="list.code" :title="list.title" />
             </li>
         </ul>
-        <right-menu class="w-full lg:w-1/2 shadow-sm p-2 lg:p-12" youtube="fbLOB3y6OPs" next="buttons" back="alert" />
+        <right-menu :list="listCom" class="w-full lg:w-1/3 shadow-sm p-2 lg:p-12" youtube="fbLOB3y6OPs" next="buttons" back="alert" />
     </div>
 </template>
 
@@ -26,13 +17,19 @@
 export default {
   data(){
       return {
-badge1: `<h1 class="text-3xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary  text-indigo-100 rounded-full">New</span></h1>
+listCom:[
+{
+    title: 'Heading',
+    code: `<h1 class="text-3xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary  text-indigo-100 rounded-full">New</span></h1>
 <h2 class="text-2xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h2>
 <h3 class="text-xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h3>
 <h4 class="text-lg py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h4>
 <h5 class="text-md py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h5>
-<h6 class="text-sm py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h6>`,
-badge2: `<div class="flex flex-wrap">
+<h6 class="text-sm py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h6>`
+},
+{
+    title: 'Button',
+    code: `<div class="flex flex-wrap">
     <button type="button" class="px-4 py-2 bg-primary hover:bg-primary_dark  rounded-lg text-indigo-100">
         Notifications <span class="text-sm m-1 py-1 px-2 text-primary bg-indigo-100 rounded-full">4</span>
     </button>
@@ -43,9 +40,11 @@ badge2: `<div class="flex flex-wrap">
         </svg>
         <span class="text-sm px-2 bg-secondary text-primary rounded-full">4</span>
     </button>
-</div>`,
-badge3: `
-<div class="flex flex-wrap">
+</div>`
+},
+{
+    title: 'Coloring',
+    code: `<div class="flex flex-wrap justify-center my-3">
 <span class="bg-default p-1 px-3 text-sm  text-white rounded-full mx-1">Default</span>
 <span class="bg-primary p-1 px-3 text-sm text-white rounded-full mx-1">Primary</span>
 <span class="bg-secondary p-1 px-3 text-sm text-primary rounded-full mx-1">Secodary</span>
@@ -53,10 +52,9 @@ badge3: `
 <span class="bg-success p-1 px-3 text-sm text-white rounded-full mx-1">Success</span>
 <span class="bg-danger p-1 px-3 text-sm text-white rounded-full mx-1">Danger</span>
 <span class="bg-warning p-1 px-3 text-sm text-white rounded-full mx-1">Warning</span>
-</div>
-`
+</div>`
 }
-  }
-}
+],
+}}}
 </script>
 

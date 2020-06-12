@@ -1,11 +1,12 @@
 <template>
-     <nav class="shadow-sm p-3 bg-theme_primary">
+     <nav class="shadow-sm p-3 bg-theme_primary_dark">
          <div class="flex flex-col">
           <h2 class="text-indigo-600 font-bold w-full py-2 px-4 flex mt-2">
             <svg class="w-6 p-1 -mt-1" id="i-book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" />
             </svg>
-            Getting Started</h2>
+            Getting Started
+            </h2>
             <div class="flex flex-col pl-4">
               <router-link v-for="com in listComStart" :key="com.path" :class="($route.path == com.path)? activeClass : nonActiveClass" :to="com.path">{{ com.name }}</router-link>
              </div>
@@ -46,90 +47,90 @@ export default {
             listComStart: [
               {
                 name: 'Overview',
-                path: '/started/overview'
+                path: '/docs/started/overview'
               },
-              {
-                name: 'Licence',
-                path: '/started/licence'
-              },
+               {
+                  name: 'Icons',
+                  path: '/docs/started/icons'
+                },
               {
                 name: 'Quick Start',
-                path: '/started/install'
+                path: '/docs/started/install'
               }
             ],
             listCom: [
               {
                 name: 'Alert',
-                path: '/component/alert'
+                path: '/docs/component/alert'
               },
               {
                 name: 'Badge',
-                path: '/component/badge'
+                path: '/docs/component/badge'
               },
               {
                 name: 'Buttons',
-                path: '/component/buttons'
+                path: '/docs/component/buttons'
               },
               
               {
                 name: 'Cards',
-                path: '/component/cards'
+                path: '/docs/component/cards'
               },
               {
                 name: 'Carousel',
-                path: '/component/carousel',
+                path: '/docs/component/carousel',
               },
               {
                 name: 'Collapse',
-                path: '/component/collapse',
+                path: '/docs/component/collapse',
               },
               {
                 name: 'Dropdown',
-                path: '/component/dropdown',
+                path: '/docs/component/dropdown',
               },
               {
                 name: 'Form Group',
-                path: '/component/form-group',
+                path: '/docs/component/form-group',
               },
               {
                 name: 'Jumbotron',
-                path: '/component/jumbotron',
+                path: '/docs/component/jumbotron',
               },
               {
                 name: 'Modal',
-                path: '/component/modal',
+                path: '/docs/component/modal',
               },
               {
                 name: 'Navs',
-                path: '/component/navs'
+                path: '/docs/component/navs'
               },
               {
                 name: 'Paginations',
-                path: '/component/paginations',
+                path: '/docs/component/paginations',
               },
               {
                 name: 'Popevers',
-                path: '/component/popevers',
+                path: '/docs/component/popevers',
               },
               {
                 name: 'Progress',
-                path: '/component/progress',
+                path: '/docs/component/progress',
               },
               {
                 name: 'Scrollspy',
-                path: '/component/scrollspy',
+                path: '/docs/component/scrollspy',
               },
               {
                 name: 'Spinners',
-                path: '/component/spinners',
+                path: '/docs/component/spinners',
               },
               {
                 name: 'Toasts',
-                path: '/component/toasts',
+                path: '/docs/component/toasts',
               },
               {
                 name: 'Tooltips',
-                path: '/component/tooltips',
+                path: '/docs/component/tooltips',
               },
             ],
             activeClass : 'bg-indigo-100 text-indigo-600 rounded-tl-md rounded-br-md w-full py-1 px-4',
