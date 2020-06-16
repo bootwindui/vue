@@ -6,15 +6,28 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         leftMenu: '',
-        themeMode: localStorage.getItem("themeMode") || 'dark-mode'
+        settings: false,
+        theme: localStorage.getItem("theme") || 'theme-dark-gray',
+        primaryColor: localStorage.getItem("primary-color") || 'primary-indigo'
     },
     mutations: {
         toggleLeftMenu(state, to) {
             state.leftMenu = to;
         },
-        toggleTheme(state, to) {
-            state.themeMode = to
-            localStorage.setItem("themeMode", to)
+        setTheme(state, to) {
+            state.theme = to
+            localStorage.setItem("theme", to)
+        },
+        setPrimaryColor(state,to){
+            state.primaryColor = to
+            localStorage.setItem("primary-color", to)
+        },
+        toggleSetting(state,to){
+            if(state.settings){
+                state.settings = false
+            }else{
+                state.settings = true
+            }
         }
     },
     actions: {

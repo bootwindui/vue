@@ -1,19 +1,97 @@
-.light-mode {
-    --color-primary_light: #fff;
-    --color-primary: #fff;
-    --color-primary_dark: #f6f9fc;
-    --color-secondary: #172b4d;
-    background: var(--color-primary);
-    color: var(--color-secondary);
+:root{
+    --color-primary_light: #A3BFFA;
+    --color-primary: #667EEA;
+    --color-primary_dark: #4C51BF;
 }
 
-.dark-mode {
-    --color-primary_light: #2D3748;
-    --color-primary: #1A202C;
-    --color-primary_dark: #2D3748;
-    --color-secondary: #f6f9fc;
-    background: var(--color-primary);
-    color: var(--color-secondary);
+.theme-light {
+    --theme-primary_light: #F7FAFC;
+    --theme-primary: #EDF2F7;
+    --theme-primary_dark: #E2E8F0;
+    --theme-secondary: #2D3748;
+
+    background: var(--theme-primary);
+    color: var(--theme-secondary);
+}
+
+.theme-dark-gray {
+    --theme-primary_light: #4A5568;
+    --theme-primary: #2D3748;
+    --theme-primary_dark: #1A202C;
+    --theme-secondary: #EDF2F7;
+
+    background: var(--theme-primary);
+    color: var(--theme-secondary);
+}
+.theme-dark-blue {
+    --theme-primary_light: 	#172b4d;
+    --theme-primary: #142645;
+    --theme-primary_dark: #12223d;
+    --theme-secondary: #EDF2F7;
+    
+    background: var(--theme-primary);
+    color: var(--theme-secondary);
+}
+/* Primary Color */
+/* Red */
+.primary-red{
+    --color-primary_light: #FEB2B2;
+    --color-primary: #F56565;
+    --color-primary_dark: #C53030
+}
+/* Orange */
+.primary-orange{
+    --color-primary_light: #FBD38D;
+    --color-primary: #ED8936;
+    --color-primary_dark: #C05621;
+}
+
+
+/* Yellow */
+.primary-yellow{
+    --color-primary_light: #FAF089;
+    --color-primary: #ECC94B;
+    --color-primary_dark: #B7791F;
+}
+
+/* Green */
+.primary-green{
+    --color-primary_light: #9AE6B4;
+    --color-primary: #48BB78;
+    --color-primary_dark: #2F855A
+}
+
+/* Teal */
+.primary-teal{
+    --color-primary_light: #81E6D9;
+    --color-primary: #38B2AC;
+    --color-primary_dark: #2C7A7B
+}
+/* Blue */
+.primary-blue{
+    --color-primary_light: #90CDF4;
+    --color-primary: #4299E1;
+    --color-primary_dark: #2B6CB0;
+}
+
+/* Indigo */
+.primary-indigo{
+    --color-primary_light: #A3BFFA;
+    --color-primary: #667EEA;
+    --color-primary_dark: #4C51BF;
+}
+
+/* Purple */
+.primary-purple{
+    --color-primary_light: #A3BFFA;
+    --color-primary: #9F7AEA;
+    --color-primary_dark: #6B46C1;
+}
+/* Pink */
+.primary-pink{
+    --color-primary_light: #FBB6CE;
+    --color-primary: #ED64A6;
+    --color-primary_dark: #B83280;
 }
 
 @tailwind base;

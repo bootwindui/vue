@@ -20,7 +20,7 @@ export default {
 listCom:[
 {
   title: 'Simple',
-  code: `<div class="shadow-lg flex flex-wrap  border-2 border-indigo-200 rounded-lg text-center ">
+  code: `<div class="shadow-lg flex flex-wrap  border rounded-lg text-center ">
     <div class="w-full py-2 px-4 ">
         Featured
     </div>
@@ -61,7 +61,7 @@ listCom:[
         <div class="border-r border-b border-l border-indigo-400 lg:border-l-0 lg:border-t lg:border-indigo-400  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div class="mb-8">
             <p class="text-sm text-indigo-600 flex items-center">
-                <svg class="fill-current text-indigo-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <svg class="fill-current text-primary w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
                 </svg>
                 Members only

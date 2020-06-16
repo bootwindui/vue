@@ -9,7 +9,7 @@
         <iframe style="border-radius:30px" width="560" height="315" :src="`https://www.youtube.com/embed/${youtube}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
-    <router-link :to="back" class="flex bg-primary hover:bg-primary p-1 px-4 text-indigo-100 float-left rounded-full">
+    <router-link v-if="back" :to="back" class="flex bg-primary hover:bg-primary p-1 px-4 text-indigo-100 float-left rounded-full">
         <svg class="bi bi-arrow-left-circle mt-1 mr-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
@@ -17,7 +17,7 @@
         </svg>
         {{ back }}
     </router-link>
-        <router-link :to="next" class="flex bg-primary hover:bg-primary p-1 px-4 text-indigo-100 float-right rounded-full">
+        <router-link v-if="next" :to="next" class="flex bg-primary hover:bg-primary p-1 px-4 text-indigo-100 float-right rounded-full">
          {{ next }}
             <svg class="bi bi-arrow-right-circle mt-1 ml-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>

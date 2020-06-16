@@ -10,7 +10,7 @@ export default [{
             path: '',
             name: 'BootWind',
             meta: {
-                title: 'BootWind Template',
+                title: 'Vue BootWind Template',
                 metaTags: [{
                     name: 'description',
                     content: 'Make a Better Website with BootWind Template and Tailwind Css '

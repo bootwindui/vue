@@ -17,14 +17,14 @@ return {
 listCom: 
 [{
     title: 'Simple',
-    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
+    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
     <span class="mr-2 text-left flex-auto">A simple alert - check it out!</span>
 </div>`
 },{
     title: 'Dismissing',
-    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
+    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
     <span class="mr-2 text-left flex-auto">A simple alert - check it out!</span>
     <svg class="bi bi-x-circle cursor-pointer" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -34,8 +34,8 @@ listCom:
 </div>`,
 },{
     title: 'With Content',
-    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-indigo-100  rounded-lg flex  flex-wrap" >
-    <span class="rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs">Info</span>
+    code: `<div class="my-4 p-2 px-3 bg-primary items-center text-white  rounded-lg flex  flex-wrap" >
+    <span class="rounded-full bg-white uppercase text-primary px-2 py-1 text-xs">Info</span>
     <span class="p-2 font-bold flex-auto">Notification !
             <svg class="bi bi-x-circle cursor-pointer float-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -53,32 +53,32 @@ listCom:
 },{
     title: 'Coloring',
     code: `
-<div class="my-4 p-2 px-3 bg-default items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-default flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Default</span>
+<div class="my-4 p-2 px-3 bg-default items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-default flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Default</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-<div class="my-4 p-2 px-3 bg-primary items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-primary flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Primary</span>
+<div class="my-4 p-2 px-3 bg-primary items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-primary flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Primary</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-<div class="my-4 p-2 px-3 bg-secondary items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-primary flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Secondary</span>
+<div class="my-4 p-2 px-3 bg-secondary items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-primary flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Secondary</span>
     <span class="text-primary mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-    <div class="my-4 p-2 px-3 bg-info items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-info flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
+    <div class="my-4 p-2 px-3 bg-info items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-info flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Info</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-<div class="my-4 p-2 px-3 bg-success items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-success flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Success</span>
+<div class="my-4 p-2 px-3 bg-success items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-success flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Success</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-<div class="my-4 p-2 px-3 bg-danger items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-danger flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Danger</span>
+<div class="my-4 p-2 px-3 bg-danger items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-danger flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Danger</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>
-<div class="my-4 p-2 px-3 bg-warning items-center text-indigo-100  rounded-full  flex shadow-sm" >
-    <span class="text-warning flex rounded-full bg-indigo-100 uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Warning</span>
+<div class="my-4 p-2 px-3 bg-warning items-center text-white  rounded-full  flex shadow-sm" >
+    <span class="text-warning flex rounded-full bg-white uppercase text-primary px-2 py-1 text-xs mr-3 shadow-sm">Warning</span>
     <span class="mr-2 text-left flex-auto">A Simple Alert- check it out!</span>
 </div>`
 }

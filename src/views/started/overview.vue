@@ -7,6 +7,7 @@
           <h1 class="w-auto font-bold text-4xl lg:text-5xl">Make a Better Website <br> with BootWind Template 
           <br>
           & Tailwind Css</h1>
+
       </div>
 
       <ul class="w-full lg:w-2/3">
@@ -26,14 +27,24 @@
                     
                   This Design System is fully coded and built on top of Open Source, more details here:
                   <ol class="my-4 font-bold">
-                      <li>Tailwind Css</li>
-                      <li>Vue Js</li>
-                      <li>Bootstrap Icons</li>
+                      <li>
+                        <a href="https://tailwindcss.com/" target="_BLANK">
+                          Tailwind Css
+                        </a>
+                      </li>
+                      <li>
+                         <a href="https://vuejs.org/" target="_BLANK">
+                          Vue Js
+                        </a>
+                      </li>
                   </ol>
                 </p>
           </li>
+          <li>
+         
+          </li>
       </ul>
-      
+
   </div>
   </div>
 </template>
