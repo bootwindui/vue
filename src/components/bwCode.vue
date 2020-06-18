@@ -19,7 +19,7 @@
             </div>
            
         </div>
-           <prism-editor class="mt-2" v-if="showCode" v-model="data" :code="data" language="html"></prism-editor>
+           <prism-editor readonly="true" class="mt-2" v-if="showCode" v-model="data" :code="data" language="html"></prism-editor>
 
          <div v-html="data" ></div>
       
@@ -33,8 +33,8 @@ export default {
     data(){
         return{
             coppied: false,
-            classNonA: 'flex cursor-pointer mx-2 p-1 px-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-900 shadow-md rounded-lg',
-            classA: 'flex cursor-pointer mx-2 p-1 px-2 bg-indigo-200 text-indigo-800 shadow-md rounded-lg',
+            classNonA: 'flex cursor-pointer mx-2 p-1 px-2 neu-out rounded-lg',
+            classA: 'flex cursor-pointer mx-2 p-1 px-2 neu-out active rounded-lg',
             showCode: false
         }
     },

@@ -1,6 +1,6 @@
 <template>
 
-     <div class="flex flex-wrap align-middle justify-center text-primary w-full lg:w-5/6 shadow-sm p-2 z-30 pt-4  ">
+     <div class="flex flex-wrap align-middle justify-center text-primary w-full lg:w-5/6 p-2 z-30 pt-4  ">
             
             <h1 class=" p-1 font-bold text-lg text-center flex flex-wrap ">
                 <svg @click="$store.commit('toggleLeftMenu','sidebar-active')" class="block lg:hidden lg:w-10 mt-1  text-primary mx-2" id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

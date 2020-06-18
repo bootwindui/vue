@@ -18,20 +18,12 @@ export default {
   data(){
       return {
 listCom:[
-{
-    title: 'Heading',
-    code: `<h1 class="text-3xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary  text-indigo-100 rounded-full">New</span></h1>
-<h2 class="text-2xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h2>
-<h3 class="text-xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h3>
-<h4 class="text-lg py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h4>
-<h5 class="text-md py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h5>
-<h6 class="text-sm py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h6>`
-},
+
 {
     title: 'Button',
-    code: `<div class="flex flex-wrap">
-    <button type="button" class="px-4 py-2 bg-primary hover:bg-primary_dark  rounded-lg text-indigo-100">
-        Notifications <span class="text-sm m-1 py-1 px-2 text-primary bg-indigo-100 rounded-full">4</span>
+    code: `<div class="flex flex-wrap justify-center">
+    <button type="button" class="px-4 py-2 neu-in  rounded-lg ">
+        Notifications <span class="text-sm m-1 py-1 px-2 neu-out rounded-full">4</span>
     </button>
     <button class="mx-3 p-2 shadow-lg bg-primary text-secondary hover:bg-primary_dark rounded-lg text-indigo-100 flex">
         <svg class="bi bi-bell m-1" width="24px" height="24px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +33,15 @@ listCom:[
         <span class="text-sm px-2 bg-secondary text-primary rounded-full">4</span>
     </button>
 </div>`
+},
+{
+    title: 'Heading',
+    code: `<h1 class="text-3xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary  text-indigo-100 rounded-full">New</span></h1>
+<h2 class="text-2xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h2>
+<h3 class="text-xl py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h3>
+<h4 class="text-lg py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h4>
+<h5 class="text-md py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h5>
+<h6 class="text-sm py-1">Example heading <span class="text-sm m-1 py-1 px-2 bg-primary text-indigo-100 rounded-full">New</span></h6>`
 },
 {
     title: 'Coloring',

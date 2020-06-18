@@ -1,6 +1,6 @@
 <template>
-     <nav class="shadow-sm p-3 z-30">
-         <div class="flex flex-col">
+     <nav class="p-3">
+         <div class="flex flex-col ">
           <h2 class="text-primary font-bold w-full py-2 px-4 flex mt-2">
             <svg class="w-6 p-1 -mt-1" id="i-book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" />

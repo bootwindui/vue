@@ -18,7 +18,10 @@ module.exports = {
                 success: '#2dce89',
                 danger: '#f5365c',
                 warning: '#fb6340',
-            }
+            },
+            borderRadius: {
+                'xl': '1rem',
+              },
         },
     },
     variants: {},

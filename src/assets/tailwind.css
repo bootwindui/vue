@@ -5,29 +5,29 @@
 }
 
 .theme-light {
-    --theme-primary_light: #F7FAFC;
+    --theme-primary_light: #ffffff;
     --theme-primary: #EDF2F7;
-    --theme-primary_dark: #E2E8F0;
-    --theme-secondary: #2D3748;
+    --theme-primary_dark: #dbe5ef;
+    --theme-secondary: #718096;
 
     background: var(--theme-primary);
     color: var(--theme-secondary);
 }
 
 .theme-dark-gray {
-    --theme-primary_light: #4A5568;
-    --theme-primary: #2D3748;
-    --theme-primary_dark: #1A202C;
-    --theme-secondary: #EDF2F7;
+    --theme-primary_light: #1b1f2c;
+    --theme-primary: #11141c;
+    --theme-primary_dark: #07090c;
+    --theme-secondary: #dbe5ef;
 
     background: var(--theme-primary);
     color: var(--theme-secondary);
 }
 .theme-dark-blue {
-    --theme-primary_light: 	#172b4d;
-    --theme-primary: #142645;
-    --theme-primary_dark: #12223d;
-    --theme-secondary: #EDF2F7;
+    --theme-primary_light: 	#001f41;
+    --theme-primary: #001327;
+    --theme-primary_dark: #00070e;
+    --theme-secondary: #dbe5ef;
     
     background: var(--theme-primary);
     color: var(--theme-secondary);
@@ -94,6 +94,40 @@
     --color-primary_dark: #B83280;
 }
 
+
+.neu-out{
+    color: var(--theme-secondary);
+    background:  var(--theme-primary);
+    box-shadow:  10px 5px 10px var(--theme-primary_dark),
+                 -10px -5px 10px var(--theme-primary_light);
+}
+.neu-out:hover,.neu-out.active{
+    color: var(--theme-secondary);
+    background:  var(--theme-primary);
+    box-shadow:  30px 15px 30px var(--theme-primary_dark),
+                 -30px -15px 30px var(--theme-primary_light);
+}
+.neu-in{
+    color: var(--theme-secondary);
+    background:  var(--theme-primary);
+    box-shadow: inset 10px 5px 10px var(--theme-primary_dark),
+                inset -10px -5px 10px var(--theme-primary_light);
+}
+
+.neu-in:hover,.neu-in.active{
+    color: var(--theme-secondary);
+    background:  var(--theme-primary);
+    box-shadow: inset 30px 15px 30px var(--theme-primary_dark),
+                inset -30px -15px 30px var(--theme-primary_light);
+}
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button:focus{
+    outline-style: none;
+}

@@ -20,7 +20,7 @@ export default {
 listCom:[
 {
   title: 'Simple',
-  code: `<div class="shadow-lg flex flex-wrap  border rounded-lg text-center ">
+  code: `<div class="flex flex-wrap rounded-xl text-center neu-in p-4 ">
     <div class="w-full py-2 px-4 ">
         Featured
     </div>
@@ -38,8 +38,8 @@ listCom:[
 },
 {
   title: 'With Image',
-  code: `<div class="mx-1 rounded-lg shadow-lg max-w-sm mx-auto border">
-    <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+  code: `<div class="mx-1 rounded-xl max-w-sm mx-auto neu-out">
+    <img class="w-full rounded-t-xl" src="/img/card-top.jpg" alt="Sunset in the mountains">
     <div class="px-6 py-4">
         <div class="font-bold text-md lg:mb-2">The Coldest Sunset</div>
         <p class="text-theme_secondary text-sm">
@@ -55,10 +55,10 @@ listCom:[
 },
 {
   title: 'With Left Image',
-  code: `<div class="w-full lg:flex justify-center">
+  code: `<div class="lg:flex justify-center ">
         <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/card-left.jpg')" title="Woman holding a mug">
         </div>
-        <div class="border-r border-b border-l border-indigo-400 lg:border-l-0 lg:border-t lg:border-indigo-400  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class=" neu-in rounded-r-xl lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div class="mb-8">
             <p class="text-sm text-indigo-600 flex items-center">
                 <svg class="fill-current text-primary w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

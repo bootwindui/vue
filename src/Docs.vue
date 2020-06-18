@@ -2,13 +2,13 @@
   <div id="app" :class="settings" >
        <div class="flex flex-wrap " >
         <div class="w-full lg:w-1/6 ">
-          <left-menu class="hidden lg:block fixed sidebar w-2/3 lg:w-1/6 bg-theme_primary_dark" />
+          <left-menu class="hidden lg:block fixed sidebar w-2/3 lg:w-1/6 bg-theme_primary_dark neu-in active" />
           <div @click="$store.commit('toggleLeftMenu','')"  class="hidden w-full sidebar-bg-close bg-theme_secondary text-theme_primary opacity-50" >
          </div>
         </div>
         <div class="w-full lg:w-5/6">
-          <top-menu class="lg:px-4 py-3 lg:fixed bg-theme_primary right-0" />
-          <router-view class="p-4 lg:pt-20 min-h-screen bg-theme_primary " />
+          <top-menu class="lg:px-4 py-3 lg:fixed bg-theme_primary right-0 " />
+             <router-view class="p-4 lg:pt-20 min-h-screen bg-theme_primary  neu-out" />
           <settings />
         </div>
       </div>
