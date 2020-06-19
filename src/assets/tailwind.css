@@ -95,32 +95,50 @@
 }
 
 
-.neu-out{
-    color: var(--theme-secondary);
-    background:  var(--theme-primary);
-    box-shadow:  10px 5px 10px var(--theme-primary_dark),
-                 -10px -5px 10px var(--theme-primary_light);
+/* Focus will take precedence over hover */
+@variants hover{
+    .neu-out{
+        /* color: var(--theme-secondary); */
+        background:  var(--theme-primary);
+        box-shadow:  10px 4px 10px var(--theme-primary_dark),
+                     -10px -4px 10px var(--theme-primary_light);
+    }
+    .neu-in{
+        /* color: var(--theme-secondary); */
+        background:  var(--theme-primary);
+        box-shadow: inset 10px 4px 10px var(--theme-primary_dark),
+                    inset -10px -4px 10px var(--theme-primary_light);
+    }
+    .neu-push{
+        /* color: var(--theme-secondary); */
+        background:  var(--theme-primary);
+        box-shadow: inset -10px -4px 10px var(--theme-primary_dark),
+                    inset 10px 4px 10px var(--theme-primary_light);
+    }
+    
 }
+
 .neu-out:hover,.neu-out.active{
-    color: var(--theme-secondary);
+    /* color: var(--theme-secondary); */
     background:  var(--theme-primary);
-    box-shadow:  30px 15px 30px var(--theme-primary_dark),
-                 -30px -15px 30px var(--theme-primary_light);
-}
-.neu-in{
-    color: var(--theme-secondary);
-    background:  var(--theme-primary);
-    box-shadow: inset 10px 5px 10px var(--theme-primary_dark),
-                inset -10px -5px 10px var(--theme-primary_light);
+    box-shadow:  10px 7px 7px var(--theme-primary_dark),
+                 -10px -7px 7px var(--theme-primary_light);
 }
 
 .neu-in:hover,.neu-in.active{
-    color: var(--theme-secondary);
+    /* color: var(--theme-secondary); */
     background:  var(--theme-primary);
-    box-shadow: inset 30px 15px 30px var(--theme-primary_dark),
-                inset -30px -15px 30px var(--theme-primary_light);
+    box-shadow: inset 10px 7px 7px var(--theme-primary_dark),
+                inset -10px -7px 7px var(--theme-primary_light);
 }
 
+
+.neu-push:hover,.neu-push.active{
+    /* color: var(--theme-secondary); */
+    background:  var(--theme-primary);
+    box-shadow: inset -10px -7px 7px var(--theme-primary_dark),
+                inset 10px 7px 7px var(--theme-primary_light);
+}
 
 
 
@@ -130,4 +148,11 @@
 
 button:focus{
     outline-style: none;
+}
+
+.hovered{
+    display: none;
+}
+.to-hover:hover .hovered{
+    display: block;
 }

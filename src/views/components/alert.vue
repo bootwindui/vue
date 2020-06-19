@@ -6,7 +6,7 @@
                 <bw-code :data="list.code" :title="list.title" />
             </li>
         </ul>
-        <right-menu :list="listCom" class="w-full lg:w-1/3 shadow-sm p-2 lg:p-12" youtube="J7kZrNYiiuc" next="badge" back="/started/install" />
+        <right-menu :list="listCom" class="w-full lg:w-1/3 p-2 lg:p-12" youtube="J7kZrNYiiuc" next="badge" back="/docs/started/install" />
     </div>
 </template>
 
@@ -17,16 +17,16 @@ return {
 listCom: 
 [{
     title: 'Neu Style',
-    code: `<div class="my-4 p-2 px-3 items-center  rounded-lg  flex  neu-out" >
-    <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out ">Info</span>
-    <span class="mr-2 text-left flex-auto font-bold">A simple alert - check it out!</span>
+    code: `<div class="my-4 p-2 px-3 items-center  rounded-xl  flex  neu-out  text-primary" >
+    <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out">Info</span>
+    <span class="mr-2 text-left flex-auto font-bold text-primary">A simple alert - check it out!</span>
 </div>`
 },
 {
     title: 'Neu With Content',
-    code: `<div class="my-4 p-2 px-3 items-center  rounded-lg  flex flex-wrap  neu-out" >
-            <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out ">Info</span>
-            <span class="mr-2 text-left flex-auto font-bold">A simple alert - check it out!</span>
+    code: `<div class="my-4 p-2 px-3 items-center  rounded-xl  flex flex-wrap  neu-out text-primary" >
+            <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out">Info</span>
+            <span class="mr-2 text-left flex-auto font-bold ">A simple alert - check it out!</span>
     
     <p class="p-2">
     Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.

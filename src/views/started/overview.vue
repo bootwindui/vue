@@ -26,14 +26,14 @@
                 <p>
                     
                   This Design System is fully coded and built on top of Open Source, more details here:
-                  <ol class="my-4 font-bold">
-                      <li>
-                        <a href="https://tailwindcss.com/" target="_BLANK">
-                          Tailwind Css
-                        </a>
-                      </li>
-                      <li>
-                         <a href="https://vuejs.org/" target="_BLANK">
+                      <ol class="my-4 font-bold">
+                          <li>
+                            <a rel="noopener"  href="https://tailwindcss.com/" target="_BLANK">
+                              Tailwind Css
+                            </a>
+                          </li>
+                          <li>
+                         <a rel="noopener"  href="https://vuejs.org/" target="_BLANK">
                           Vue Js
                         </a>
                       </li>

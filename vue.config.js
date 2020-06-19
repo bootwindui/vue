@@ -1,12 +1,17 @@
 module.exports = {
-  publicPath: '',
-
   pwa: {
-    name: 'BootWind',
-    themeColor: '#5e72e4',
-    msTileColor: '#5e72e4',
+    themeColor: '#EDF2F7',
+    msTileColor: '#EDF2F7',
     manifestOptions: {
-      background_color: '#5e72e4'
+      background_color: '#EDF2F7'
+    },
+    name: 'BootWind',
+    manifestCrossorigin: 'use-credentials',
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true,
     }
-  }
+  },
+
+  publicPath: ''
 }

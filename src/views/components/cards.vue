@@ -9,7 +9,7 @@
             </li>
         </ul>
         
-        <right-menu :list="listCom" class="w-full lg:w-1/3 shadow-sm p-2 lg:p-12" youtube="laI_rwHPnNM" next="breadcrumb" back="alert" />
+        <right-menu :list="listCom" class="w-full lg:w-1/3 p-2 lg:p-12" youtube="laI_rwHPnNM" next="carousel" back="button" />
     </div>
 </template>
 

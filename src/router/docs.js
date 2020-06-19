@@ -1,8 +1,7 @@
-import Home from '../views/started/overview.vue'
+import Home from  '../views/started/overview.vue'
 
 export default [{
     path: '/docs',
-    name: 'docs',
     component: function() {
         return import ( /* webpackChunkName: "docs" */ '../Docs.vue')
     },
@@ -115,6 +114,36 @@ export default [{
             },
             component: function() {
                 return import ( /* webpackChunkName: "c-carousel" */ '../views/components/carousel.vue')
+            }
+        },
+
+        {
+            path: 'component/collapse',
+            name: 'collapse',
+            meta: {
+                title: 'Collapse Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'Collapse Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-collapse" */ '../views/components/collapse.vue')
+            }
+        },
+
+        {
+            path: 'component/dropdown',
+            name: 'dropdown',
+            meta: {
+                title: 'Dropdown Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'Dropdown Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-dropdown" */ '../views/components/dropdown.vue')
             }
         },
 

@@ -1,8 +1,8 @@
 <template>
      <nav class="p-3">
-         <div class="flex flex-col ">
+         <div class="flex flex-col">
           <h2 class="text-primary font-bold w-full py-2 px-4 flex mt-2">
-            <svg class="w-6 p-1 -mt-1" id="i-book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <svg class="w-8 p-1 -mt-1" id="i-book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M16 7 C16 7 9 1 2 6 L2 28 C9 23 16 28 16 28 16 28 23 23 30 28 L30 6 C23 1 16 7 16 7 Z M16 7 L16 28" />
             </svg>
             Getting Started
@@ -14,7 +14,7 @@
         <div class="flex flex-col">
           <h2 class="text-primary font-bold w-full py-2 px-4 flex">
             
-            <svg  class="w-6 p-1 -mt-1" id="i-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <svg  class="w-8 p-1 -mt-1" id="i-folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M2 26 L30 26 30 7 14 7 10 4 2 4 Z M30 12 L2 12" />
             </svg>
             Component</h2>
@@ -24,7 +24,7 @@
         </div>
          <div class="flex flex-col">
           <h2 class="text-primary font-bold w-full py-2 px-4 flex">
-              <svg class="w-6 p-1 -mt-1"  id="i-portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <svg class="w-8 p-1 -mt-1"  id="i-portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M29 17 L29 28 3 28 3 17 M2 8 L30 8 30 16 C30 16 24 20 16 20 8 20 2 16 2 16 L2 8 Z M16 22 L16 18 M20 8 C20 8 20 4 16 4 12 4 12 8 12 8" />
             </svg>
             Template</h2>
@@ -90,7 +90,7 @@ export default {
                   path: '/docs/component/dropdown',
                 },
                 {
-                  name: 'Form Group',
+                  name: 'Form',
                   path: '/docs/component/form-group',
                 },
                 {
@@ -135,8 +135,8 @@ export default {
                 },
               ],
             },
-            activeClass : 'bg-primary_light text-primary_dark rounded-tl-md rounded-br-md w-full py-1 px-4 mb-1',
-            nonActiveClass : 'rounded hover:bg-primary_light hover:text-primary_dark w-full py-1 px-4 mb-1'
+            activeClass : 'neu-out font-semibold rounded-lg py-2 px-4 text-primary hover:text-primary my-2 mr-4',
+            nonActiveClass : 'hover:neu-out hover:font-semibold rounded-lg py-2 px-4 hover:text-primary mr-4'
         }
     }
 }

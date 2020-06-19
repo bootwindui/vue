@@ -9,7 +9,6 @@ module.exports = {
                 theme_primary: 'var(--theme-primary)',
                 theme_primary_dark: 'var(--theme-primary_dark)',
                 theme_secondary: 'var(--theme-secondary)',
-                default: '#172b4d',
                 primary_light: 'var(--color-primary_light)',
                 primary: 'var(--color-primary)',
                 primary_dark: 'var(--color-primary_dark)',
@@ -18,6 +17,7 @@ module.exports = {
                 success: '#2dce89',
                 danger: '#f5365c',
                 warning: '#fb6340',
+                default: '#718096',
             },
             borderRadius: {
                 'xl': '1rem',

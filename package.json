@@ -1,20 +1,17 @@
 {
     "name": "Bootwind-Template",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build"
     },
     "dependencies": {
-        "prismjs": "^1.20.0",
         "register-service-worker": "^1.7.1",
         "vue": "^2.6.11",
-        "vue-prism-component": "^1.2.0",
         "vue-prism-editor": "^0.6.1",
         "vue-router": "^3.2.0",
         "vue-scrollto": "^2.18.1",
-        "vue2-touch-events": "^2.2.1",
         "vuex": "^3.4.0"
     },
     "devDependencies": {
