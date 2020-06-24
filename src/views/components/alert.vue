@@ -17,15 +17,15 @@ return {
 listCom: 
 [{
     title: 'Neu Style',
-    code: `<div class="my-4 p-2 px-3 items-center  rounded-xl  flex  neu-out  text-primary" >
-    <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out">Info</span>
+    code: `<div class="my-4 p-2 px-3 items-center  rounded-lg  flex  neu-in hover:neu-out  text-primary" >
+    <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-in hover:neu-out">Info</span>
     <span class="mr-2 text-left flex-auto font-bold text-primary">A simple alert - check it out!</span>
 </div>`
 },
 {
     title: 'Neu With Content',
-    code: `<div class="my-4 p-2 px-3 items-center  rounded-xl  flex flex-wrap  neu-out text-primary" >
-            <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-out">Info</span>
+    code: `<div class="my-4 p-2 px-3 items-center  rounded-lg  flex flex-wrap  neu-in hover:neu-out text-primary" >
+            <span class="flex rounded-full font-bold px-4 p-2 text-sm mr-3 neu-in hover:neu-out">Info</span>
             <span class="mr-2 text-left flex-auto font-bold ">A simple alert - check it out!</span>
     
     <p class="p-2">

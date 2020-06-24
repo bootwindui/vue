@@ -11,7 +11,7 @@
                     Button Collapse
                 </button>
 
-                <div v-if="collapseActive" class="flex flex-wrap rounded-xl neu-out p-4 mt-3">
+                <div v-if="collapseActive" class="flex flex-wrap rounded-lg neu-out p-4 mt-3">
                     <div class="w-full py-2 px-4 flex flex-col">
                         <h5 class="text-xl font-bold flex-col py-1">Collapse Content</h5>
                         <p class="flex-col">With supporting text below as a natural lead-in to additional content.</p>
@@ -22,7 +22,7 @@
             <li class="p-2">
                 <h1 class="py-2 font-semibold text-lg ">Accordion</h1>
 
-                <ul class=" rounded-xl neu-out p-4">
+                <ul class=" rounded-lg neu-out p-4">
                     <li v-for="list in listAccordion" :key="list.id" class="px-6 py-3 pb-2 w-full text-left rounded-lg hover:neu-in" :class="(list.id == accordionActive) ? 'neu-in rounded-lg my-2': ''">
                         <button @click="accordionActive = list.id" class="font-bold w-full text-left pb-2">{{ list.title }}</button>
                         <p v-if="list.id == accordionActive" >

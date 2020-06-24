@@ -11,7 +11,7 @@
                 <div class="relative" >
                     <div v-for="(data,i) in listCarousel" :key="i">
                         <span v-if="carouselActive == i" >
-                            <div class="flex flex-wrap text-center border rounded-xl neu-in">
+                            <div class="flex flex-wrap text-center rounded-lg neu-in">
                                 <div class="w-full py-2 ">
                                     {{data.title}}
                                 </div>

@@ -3,19 +3,65 @@ import VueRouter from 'vue-router'
 import routeDoc from "./docs"
 
 
-
 Vue.use(VueRouter)
 
 
 const routes = [
     ...routeDoc,
-    // 404
     {
-        path: '*',
-        redirect: '/docs'
-    }
+        path: '',
+        name: 'home',
+        meta: {
+            title: 'BootWind Template',
+            metaTags: [{
+                name: 'description',
+                content: 'Bootwind Template'
+            }]
+        },
+        component: function() {
+            return import ( /* webpackChunkName: "index" */ '../views/Index.vue')
+        }
+    },
+    {
+        path: '/dashboard-1',
+        name: 'dashboard-1',
+        component: function() {
+            return import ( /* webpackChunkName: "dashboard-1" */ '../views/admin/dashboard-1/layout.vue')
+        },
+        children: [
+            {
+                path: '',
+                name: 'Dashboard 1',
+                meta: {
+                    title: 'Admin BootWind - Dashboard 1 - Analytics ',
+                    metaTags: [{
+                        name: 'description',
+                        content: 'Admin Dashboard 1 - Analytics - Bootwind Template'
+                    }]
+                },
+                component: function() {
+                    return import ( /* webpackChunkName: "dashboard-1" */ '../views/admin/dashboard-1/index.vue')
+                },
+            },
+            {
+                path: 'users',
+                name: 'Users',
+                meta: {
+                    title: 'Users - Admin Dashboard 1 ',
+                    metaTags: [{
+                        name: 'description',
+                        content: 'Admin Dashboard 1 - Bootwind Template'
+                    }]
+                },
+                component: function() {
+                    return import ( /* webpackChunkName: "dashboard-1" */ '../views/admin/dashboard-1/users.vue')
+                },
+            }
+        ]
+    },
 ]
 const router = new VueRouter({
+    mode: 'history',
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {

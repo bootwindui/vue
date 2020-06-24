@@ -1,86 +1,27 @@
 <template>
-
-     <div class="flex flex-wrap align-middle justify-center text-primary w-full lg:w-5/6 p-2 z-30 pt-4  ">
-            
-            <h1 class=" p-1 font-bold text-lg text-center flex flex-wrap ">
-                <svg @click="$store.commit('toggleLeftMenu','sidebar-active')" class="block lg:hidden lg:w-10 mt-1  text-primary mx-2" id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
-                </svg>
-
+    <div :class="settings" class="min-h-screen bg-theme_primary" >
+       <div class="flex flex-wrap lg:px-5 py-3 justify-center" >
+            <h1 class="p-3 font-bold text-lg text-center flex flex-wrap ">
                 <div class="bg-primary rounded-full neu-out">
-                  <img class="w-10 h-10" src="@/assets/logo-bootwind-template.png" alt="Logo BootWind Template">
+                <img class="w-10 h-10" src="@/assets/logo-bootwind-template.png" alt="Logo BootWind Template">
                 </div>
- 
-                <router-link class="flex font-semibold text-2xl  tracking-tight" to="/">
-                  <span class="px-2 ">BootWind </span> 
+
+                <router-link class="flex text-primary text-2xl " to="/">
+                <span class="px-2 font-bold ">BootWind</span> 
+                </router-link>
+
+                <router-link class="flex text-primary text-lg mt-2 " to="/docs">
+                <span class="px-2 font-bold ">Doc</span> 
                 </router-link>
 
             </h1>
-            
-            <div class="ml-auto p-1 text-md  " >
+
+            <div class="ml-auto p-3 text-md " >
               <div class="flex flex-wrap">
-                <div class="cursor-pointer px-4 pt-2  mx-2 rounded-full flex"> 
-                     <svg class="mx-2" width="1.3em" height="1.3em" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                      <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
-                      <g>
-                        <path style="fill:#0052B4;" d="M52.92,100.142c-20.109,26.163-35.272,56.318-44.101,89.077h133.178L52.92,100.142z"/>
-                        <path style="fill:#0052B4;" d="M503.181,189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075,89.076H503.181z"/>
-                        <path style="fill:#0052B4;" d="M8.819,322.784c8.83,32.758,23.993,62.913,44.101,89.075l89.074-89.075L8.819,322.784L8.819,322.784
-                          z"/>
-                        <path style="fill:#0052B4;" d="M411.858,52.921c-26.163-20.109-56.317-35.272-89.076-44.102v133.177L411.858,52.921z"/>
-                        <path style="fill:#0052B4;" d="M100.142,459.079c26.163,20.109,56.318,35.272,89.076,44.102V370.005L100.142,459.079z"/>
-                        <path style="fill:#0052B4;" d="M189.217,8.819c-32.758,8.83-62.913,23.993-89.075,44.101l89.075,89.075V8.819z"/>
-                        <path style="fill:#0052B4;" d="M322.783,503.181c32.758-8.83,62.913-23.993,89.075-44.101l-89.075-89.075V503.181z"/>
-                        <path style="fill:#0052B4;" d="M370.005,322.784l89.075,89.076c20.108-26.162,35.272-56.318,44.101-89.076H370.005z"/>
-                      </g>
-                      <g>
-                        <path style="fill:#D80027;" d="M509.833,222.609h-220.44h-0.001V2.167C278.461,0.744,267.317,0,256,0
-                          c-11.319,0-22.461,0.744-33.391,2.167v220.44v0.001H2.167C0.744,233.539,0,244.683,0,256c0,11.319,0.744,22.461,2.167,33.391
-                          h220.44h0.001v220.442C233.539,511.256,244.681,512,256,512c11.317,0,22.461-0.743,33.391-2.167v-220.44v-0.001h220.442
-                          C511.256,278.461,512,267.319,512,256C512,244.683,511.256,233.539,509.833,222.609z"/>
-                        <path style="fill:#D80027;" d="M322.783,322.784L322.783,322.784L437.019,437.02c5.254-5.252,10.266-10.743,15.048-16.435
-                          l-97.802-97.802h-31.482V322.784z"/>
-                        <path style="fill:#D80027;" d="M189.217,322.784h-0.002L74.98,437.019c5.252,5.254,10.743,10.266,16.435,15.048l97.802-97.804
-                          V322.784z"/>
-                        <path style="fill:#D80027;" d="M189.217,189.219v-0.002L74.981,74.98c-5.254,5.252-10.266,10.743-15.048,16.435l97.803,97.803
-                          H189.217z"/>
-                        <path style="fill:#D80027;" d="M322.783,189.219L322.783,189.219L437.02,74.981c-5.252-5.254-10.743-10.266-16.435-15.047
-                          l-97.802,97.803V189.219z"/>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      <g>
-                      </g>
-                      </svg>
-                     <span class="font-bold "> EN </span>
-                </div>
+                <a rel="noopener"  target="_blank" href="https://github.com/bootwindt/vue-bootwind-template" class="
+                cursor-pointer px-4 pt-2  mx-2 rounded-full hidden lg:block text-primary"> 
+                     Version <span class="font-bold "> ( 0.0.2 ) </span>
+                </a>
                 <div class="hidden lg:flex">
                     <a rel="noopener" target="_blank" href="https://twitter.com/bootwindt" class="cursor-pointer text-primary p-2">                  
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><linearGradient id="_osn9zIN2f6RhTsY8WhY4a" x1="10.341" x2="40.798" y1="8.312" y2="38.769" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#_osn9zIN2f6RhTsY8WhY4a)" d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"/></svg>    
@@ -94,7 +35,6 @@
                     <a rel="noopener"  target="_blank" href="https://github.com/bootwindt" class="cursor-pointer m-2 rounded-full bg-white">
                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">    <path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.6,5,2.5,9.3,6.9,10.7v-2.3c0,0-0.4,0.1-0.9,0.1c-1.4,0-2-1.2-2.1-1.9 c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1c0.4,0,0.7-0.1,0.9-0.2 c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6c0,0,1.4,0,2.8,1.3 C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3 c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v3.3c4.1-1.3,7-5.1,7-9.5C22,6.1,16.9,1.4,10.9,2.1z"/></svg>
                     </a>
-                   
                 </div>
                  <div @click="$store.commit('toggleSetting')" class="cursor-pointer m-2 bg-primary rounded-full">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -104,10 +44,38 @@
                         </g>
                       </svg>
                     </div>
-               
               </div>
-               
             </div>
-      </div>
-
+            <settings />
+            <main class="flex flex-wrap mt-5 w-full lg:w-3/4">
+                <ul class="w-full flex flex-wrap items-center justify-center rounded-xl">
+                    <li v-for="i in 1" :key="i" class="w-full lg:w-1/2 rounded-full font-bold text-center neu-in p-5 border-8 border-theme_primary">
+                        <router-link :to="`/dashboard-${i}`">
+                            <h1 class="text-center text-primary mb-5 text-xl">Dashboard {{i}}</h1>
+                            <img class="rounded-xl mb-3 w-full" :src="`/design/dashboard-${i}-dark-blue.jpg`" alt="Interface Dashboard v2">
+                        </router-link>
+                        By 
+                        <router-link to="https://bootwindt.github.io" class="text-primary">BootWind Template</router-link>
+                    </li>
+                   
+                </ul>
+            </main>
+          </div>
+        </div>
 </template>
+
+<script>
+
+import settings from '@/components/settings.vue'
+
+export default {
+  components:{
+    settings
+  },
+  computed:{
+    settings(){
+      return this.$store.state.leftMenu +" "+ this.$store.state.theme+" "+ this.$store.state.primaryColor;
+    }
+  }
+}
+</script>

@@ -46,18 +46,19 @@ export default {
         return {
             menu: {
               start: [
+                 {
+                  name: 'Dashboards',
+                  path: '/'
+                },
                 {
                   name: 'Overview',
                   path: '/docs/started/overview'
                 },
                 {
-                    name: 'Icons',
-                    path: '/docs/started/icons'
-                  },
-                {
                   name: 'Quick Start',
                   path: '/docs/started/install'
-                }
+                },
+               
               ],
               com: [
                 {
@@ -91,7 +92,7 @@ export default {
                 },
                 {
                   name: 'Form',
-                  path: '/docs/component/form-group',
+                  path: '/docs/component/form',
                 },
                 {
                   name: 'Jumbotron',
@@ -108,35 +109,11 @@ export default {
                 {
                   name: 'Paginations',
                   path: '/docs/component/paginations',
-                },
-                {
-                  name: 'Popevers',
-                  path: '/docs/component/popevers',
-                },
-                {
-                  name: 'Progress',
-                  path: '/docs/component/progress',
-                },
-                {
-                  name: 'Scrollspy',
-                  path: '/docs/component/scrollspy',
-                },
-                {
-                  name: 'Spinners',
-                  path: '/docs/component/spinners',
-                },
-                {
-                  name: 'Toasts',
-                  path: '/docs/component/toasts',
-                },
-                {
-                  name: 'Tooltips',
-                  path: '/docs/component/tooltips',
-                },
+                }
               ],
             },
-            activeClass : 'neu-out font-semibold rounded-lg py-2 px-4 text-primary hover:text-primary my-2 mr-4',
-            nonActiveClass : 'hover:neu-out hover:font-semibold rounded-lg py-2 px-4 hover:text-primary mr-4'
+            activeClass : 'neu-in font-semibold rounded-lg py-2 px-4 text-primary hover:text-primary my-2 mr-4',
+            nonActiveClass : 'hover:neu-in hover:font-semibold rounded-lg py-2 px-4 hover:text-primary mr-4'
         }
     }
 }

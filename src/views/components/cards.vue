@@ -20,7 +20,7 @@ export default {
 listCom:[
 {
   title: 'Simple',
-  code: `<div class="flex flex-wrap rounded-xl text-center neu-in p-4 ">
+  code: `<div class="flex flex-wrap rounded-lg text-center neu-in p-4 ">
     <div class="w-full py-2 px-4 ">
         Featured
     </div>
@@ -38,7 +38,7 @@ listCom:[
 },
 {
   title: 'With Image',
-  code: `<div class="mx-1 rounded-xl max-w-sm mx-auto neu-out">
+  code: `<div class="mx-1 rounded-lg max-w-sm mx-auto neu-out">
     <img class="w-full rounded-t-xl" src="/img/card-top.jpg" alt="Sunset in the mountains">
     <div class="px-6 py-4">
         <div class="font-bold text-md lg:mb-2">The Coldest Sunset</div>

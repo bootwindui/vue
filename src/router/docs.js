@@ -32,20 +32,6 @@ export default [{
             }
         },
         {
-            path: 'started/icons',
-            name: 'Icons',
-            meta: {
-                title: 'BootWind Icons',
-                metaTags: [{
-                    name: 'description',
-                    content: 'BootWind Icons - Vue BootWind Template '
-                }]
-            },
-            component: function() {
-                return import ( /* webpackChunkName: "icons" */ '../views/started/icons.vue')
-            }
-        },
-        {
             path: 'component/alert',
             name: 'Alert',
             meta: {
@@ -147,6 +133,77 @@ export default [{
             }
         },
 
+        {
+            path: 'component/form',
+            name: 'form',
+            meta: {
+                title: 'Form Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'Form Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-form" */ '../views/components/form.vue')
+            }
+        },
+        {
+            path: 'component/jumbotron',
+            name: 'jumbotron',
+            meta: {
+                title: 'jumbotron Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'jumbotron Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-jumbotron" */ '../views/components/jumbotron.vue')
+            }
+        },
+        {
+            path: 'component/modal',
+            name: 'modal',
+            meta: {
+                title: 'modal Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'modal Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-modal" */ '../views/components/modal.vue')
+            }
+        },
+        {
+            path: 'component/navs',
+            name: 'navs',
+            meta: {
+                title: 'navs Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'navs Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-navs" */ '../views/components/navs.vue')
+            }
+        },
+
+        {
+            path: 'component/paginations',
+            name: 'paginations',
+            meta: {
+                title: 'paginations Tailwind CSS Component',
+                metaTags: [{
+                    name: 'description',
+                    content: 'paginations Tailwind CSS Component'
+                }]
+            },
+            component: function() {
+                return import ( /* webpackChunkName: "c-navs" */ '../views/components/paginations.vue')
+            }
+        },
 
         // 404
         {

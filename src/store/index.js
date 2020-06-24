@@ -7,7 +7,7 @@ export default new Vuex.Store({
     state: {
         leftMenu: '',
         settings: false,
-        theme: localStorage.getItem("theme") || 'theme-light',
+        theme: localStorage.getItem("theme") || 'theme-dark-blue',
         primaryColor: localStorage.getItem("primary-color") || 'primary-indigo'
     },
     mutations: {

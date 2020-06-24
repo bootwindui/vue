@@ -42,42 +42,6 @@ export default {
     settings(){
       return this.$store.state.leftMenu +" "+ this.$store.state.theme+" "+ this.$store.state.primaryColor;
     }
-  },
-   watch: {
-    $route(to, from) {
-     this.$store.commit('toggleLeftMenu','')
-      // react to route changes...
-    }
   }
 }
 </script>
-
-<style scoped>
-
-.sidebar{
-  height: 100vh;
-  overflow-y: scroll;
-  padding-bottom: 100px;
-}
-::-webkit-scrollbar{
-  display: none;
-}
-
-
-.sidebar-active .sidebar-bg-close{
-  height: 100vh;
-  width: 100%;
-  display: block;
-  position: fixed;
-  z-index: 99;
-}
-
-.sidebar-active .sidebar{
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-
-</style>
