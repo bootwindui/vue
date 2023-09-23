@@ -1,15 +1,5 @@
 <template>
-  <div id="app" >
-      <router-view />
-  </div>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
 </template>
-
-<script>
-export default {
-   watch: {
-    $route(to, from) {
-     this.$store.commit('toggleLeftMenu','')
-    }
-  }
-}
-</script>
