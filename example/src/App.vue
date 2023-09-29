@@ -17,6 +17,5 @@
 </template>
 
 <script setup>
-import { Btn, Chip, Dropdown } from 'bootwind'
-import { Select } from '../../dist/index'
+import { Btn, Chip, Dropdown, Select } from 'bootwind'
 </script>
