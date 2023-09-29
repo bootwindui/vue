@@ -1,7 +1,7 @@
 <template>
-    <button class="bg-blue-500 text-white px-3 py-1 rounded">
+    <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-sm">
         {{label}}
-    </button>
+    </span>
 </template>
 <script setup>
 import { defineProps } from 'vue';
