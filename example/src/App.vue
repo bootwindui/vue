@@ -5,9 +5,17 @@
     <Btn label="Button" />
     <Chip label="Chip" />
     <Dropdown />
+    <Select :options="[
+      { name: 'Wade Cooper' },
+      { name: 'Arlene Mccoy' },
+      { name: 'Devon Webb' },
+      { name: 'Tom Cook' },
+      { name: 'Tanya Fox' },
+      { name: 'Hellen Schmidt' },
+    ]" />
   </div>
 </template>
 
 <script setup>
-import { Btn, Chip, Dropdown } from 'bootwind'
+import { Btn, Chip, Dropdown, Select } from 'bootwind'
 </script>
