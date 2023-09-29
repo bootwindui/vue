@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootwind": "^0.0.8",
     "vue": "^3.3.4"
   },
   "devDependencies": {
