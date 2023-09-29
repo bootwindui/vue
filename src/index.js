@@ -1,6 +1,3 @@
-import Btn from '@/ui/Btn.vue'
-import Chip from '@/ui/Chip.vue'
-export {
-    Btn,
-    Chip
-}
+export * from './ui/Btn/Btn'
+export * from './ui/Chip/Chip'
+export * from './ui/Dropdown/Dropdown'
