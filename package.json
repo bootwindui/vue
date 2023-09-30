@@ -5,6 +5,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build-position": "npm run build --prefix packages/@bootwind-position",
+    "build-helper": "npm run build --prefix packages/@bootwind-helper",
+    "build-icons": "npm run build --prefix packages/@bootwind-icons",
+    "build-form": "npm run build --prefix packages/@bootwind-form",
+    "build-datatable": "npm run build --prefix packages/@bootwind-datatable",
+    "build-react": "npm run build --prefix packages/@bootwind-react",
+    "build-all": "vite build && vite build-position && vite build-helper && vite build-icons && vite build-form && vite build-datatable && vite build-react",
     "preview": "vite preview",
     "new-version": "npm version patch"
   },
