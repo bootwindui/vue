@@ -1,5 +1,5 @@
 {
-  "name": "@bootwind/position",
+  "name": "@bootwind/helpers",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bootwindt/bootwind.git",
-    "directory": "packages/@bootwind-position"
+    "directory": "packages/@bootwind-helpers"
   },
   "publishConfig": {
     "access": "public"
