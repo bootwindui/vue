@@ -13,8 +13,7 @@
     "build-react": "npm run build --prefix packages/@bootwind-react",
     "build-all": "vite build && vite build-position && vite build-helper && vite build-icons && vite build-form && vite build-datatable && vite build-react",
     "postinstall": "(cd packages/@bootwind-datatable && npm install) && (cd packages/@bootwind-form && npm install) && (cd packages/@bootwind-helper && npm install) && (cd packages/@bootwind-icons && npm install)",
-    "new-version": "npm version patch",
-    "publish": "npm run new-version && npm publish"
+    "new-version": "npm version patch"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
