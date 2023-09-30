@@ -1,22 +1,29 @@
 <template>
     <div style="min-height: 200vh;">
-        <button @mouseenter="toggleContent(1)" ref="btn">Button</button>
-        <div  @mouseleave="toggleContent(1)" v-if="content.active" style="position:fixed;max-width: 200px;" ref="element" :style="`background: black;color: white; ${content.position}`">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
+        <button role="label" @mouseenter="toggleContent(1)" ref="btn">Button</button>
+        <div role="listbox"  tabindex="0" @mouseleave="toggleContent(1)" v-if="content.active" style="position:fixed;max-width: 200px;" ref="element" :style="`background: black;color: white; ${content.position}`">
+            <div role="option" id="listbox1-1" class="selected" aria-selected="true">
+                Green
+            </div>
+            <div role="option" id="listbox1-2">Orange</div>
+            <div role="option" id="listbox1-3">Red</div>
+            <div role="option" id="listbox1-4">Blue</div>
+            <div role="option" id="listbox1-5">Violet</div>
+            <div role="option" id="listbox1-6">Periwinkle</div>
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
         </div>
     </div>
     <br>
     <div style="text-align: right;margin-top: 500px;">
-        <button @mouseenter="toggleContent(2)" ref="tooltip_btn">Button</button>
-        <div @mouseleave="toggleContent(2)" v-if="content.active_2" style="position:fixed;max-width: 200px;" ref="tooltip_content" :style="`background: black;color: white; ${content.position_2}`">
+        <button  @mouseenter="toggleContent(2)" ref="tooltip_btn">Button</button>
+        <div  @mouseleave="toggleContent(2)" v-if="content.active_2" style="position:fixed;max-width: 200px;" ref="tooltip_content" :style="`background: black;color: white; ${content.position_2}`">
+           
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
-            
         </div>
     </div>
 </template>
