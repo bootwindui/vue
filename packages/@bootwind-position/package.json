@@ -14,11 +14,6 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "vite": "^4.4.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bootwindt/bootwind.git",
-    "directory": "packages/@position"
-  },
   "exports": {
     ".": {
       "import": "./dist/index.js"
@@ -26,7 +21,6 @@
   },
   "module": "./dist/index.js",
   "files": [
-    "./dist",
-    "./LICENSE"
+    "./dist"
   ]
 }
