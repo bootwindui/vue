@@ -14,6 +14,10 @@
     "new-version": "npm version patch"
   },
   "dependencies": {
+    "@bootwind/datatable": "^0.0.1",
+    "@bootwind/form": "^0.0.1",
+    "@bootwind/helpers": "^0.0.1",
+    "@bootwind/icons": "^0.0.1",
     "@headlessui/vue": "^1.7.16",
     "bootwind": "^0.0.13",
     "vue": "^3.3.4"
