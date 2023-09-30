@@ -6,7 +6,7 @@ import { resolve } from 'path'
 
 // Defines an array of entry points to be used to search for files.
 const entryPoints = [
-  'src/*.js'
+  'src/index.js'
 ]
 
 // Searches for files that match the patterns defined in the array of input points.

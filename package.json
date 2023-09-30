@@ -1,6 +1,6 @@
 {
   "name": "bootwind",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,7 +19,6 @@
     "@bootwind/helpers": "^0.0.1",
     "@bootwind/icons": "^0.0.1",
     "@headlessui/vue": "^1.7.16",
-    "bootwind": "^0.0.13",
     "vue": "^3.3.4"
   },
   "devDependencies": {
