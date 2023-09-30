@@ -12,8 +12,9 @@
     "build-datatable": "npm run build --prefix packages/@bootwind-datatable",
     "build-react": "npm run build --prefix packages/@bootwind-react",
     "build-all": "vite build && vite build-position && vite build-helper && vite build-icons && vite build-form && vite build-datatable && vite build-react",
-    "preview": "vite preview",
-    "new-version": "npm version patch"
+    "postinstall": "(cd packages/@bootwind-datatable && npm install) && (cd packages/@bootwind-form && npm install) && (cd packages/@bootwind-helper && npm install) && (cd packages/@bootwind-icons && npm install)",
+    "new-version": "npm version patch",
+    "publish": "npm run new-version && npm publish"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
