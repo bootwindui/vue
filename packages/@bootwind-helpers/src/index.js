@@ -10,8 +10,11 @@ const getFloating = (btn, el, position, x = 0, y = 0) => {
 
         const elTop = el.offsetTop
         const elHeight = el.offsetHeight
-        if(elTop + elHeight > window.innerHeight){
-            top = window.innerHeight - elHeight - y
+        const innerHeight = window.innerHeight
+
+        
+        if(elTop + elHeight > innerHeight){
+            top = innerHeight - elHeight - y
         }
 
         if(position === 'right') {
