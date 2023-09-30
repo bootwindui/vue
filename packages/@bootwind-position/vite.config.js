@@ -6,7 +6,6 @@ import { resolve } from 'path'
 
 // Defines an array of entry points to be used to search for files.
 const entryPoints = [
-  'src/ui/**/*.js',
   'src/*.js'
 ]
 
@@ -43,7 +42,7 @@ export default defineConfig({
       formats: ['es']
     },
     rollupOptions: {
-      external: ['vue','@headlessui/vue'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue',
