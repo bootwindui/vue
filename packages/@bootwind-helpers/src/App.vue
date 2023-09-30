@@ -17,8 +17,8 @@
     </div>
     <br>
     <div style="text-align: right;margin-top: 500px;">
-        <button  @mouseenter="toggleContent(2)" ref="tooltip_btn">Button</button>
-        <div  @mouseleave="toggleContent(2)" v-if="content.active_2" style="position:fixed;max-width: 200px;" ref="tooltip_content" :style="`background: black;color: white; ${content.position_2}`">
+        <button @mouseenter="toggleContent(2)" ref="tooltip_btn">Button</button>
+        <div @mouseleave="toggleContent(2)" v-if="content.active_2" style="position:fixed;max-width: 200px;" ref="tooltip_content" :style="`background: black;color: white; ${content.position_2}`">
            
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, explicabo velit suscipit, veritatis fugit veniam excepturi quasi soluta nam dignissimos facere cum labore ab tempora modi, asperiores commodi temporibus? Voluptates.
