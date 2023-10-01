@@ -1,1 +1,1 @@
-Bootwind Template (WIP)
+1. getFloating : to create tooltip , dropdown , select

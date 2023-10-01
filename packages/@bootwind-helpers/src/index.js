@@ -2,31 +2,45 @@
 const getFloating = (btn, el, position, x = 0, y = 0) => {
     if(btn && el && position){
 
-        const btnWidth = btn.offsetWidth
-        const btnTop = btn.offsetTop
-        const btnLeft = btn.offsetLeft
+        const btnWidth = btn.getBoundingClientRect().width
+        const btnHeight = btn.getBoundingClientRect().height
+        const btnTop = btn.getBoundingClientRect().top
+        const btnLeft = btn.getBoundingClientRect().left
+        
+        const elTop = el.getBoundingClientRect().top
+        const elHeight = el.getBoundingClientRect().height
+        const innerWidth = window.innerWidth
 
-        let top = btnTop + y
+        const topLeftRight = btnTop + btnHeight + y
 
-        const elTop = el.offsetTop
-        const elHeight = el.offsetHeight
-        if(elTop + elHeight > window.innerHeight){
-            top = window.innerHeight - elHeight - y
+        if(position === 'left') {
+            return `top:${topLeftRight}px`
         }
 
         if(position === 'right') {
-            const left = btnWidth + btnLeft + x
-            return `left:${left}px;top:${top}px`
+            return `top:${topLeftRight}px`
+        }
+
+
+        let top = btnTop + y
+
+        if(elTop + elHeight > innerHeight){
+            top = innerHeight - elHeight - y
         }
         
-        if(position === 'left') {
-            const right = window.innerWidth - btnLeft + x
+
+        if(position === 'top-left') {
+            const right = innerWidth - btnLeft + x
             return `right:${right}px;top:${top}px`
+        }
+
+        if(position === 'top-right') {
+            const left = btnWidth + btnLeft + x
+            return `left:${left}px;top:${top}px`
         }
 
     }
     return ''
-   
 }
 
 export {
