@@ -6,7 +6,7 @@ const getFloating = (btn, el, position, x = 0, y = 0) => {
         const btnHeight = btn.getBoundingClientRect().height
         const btnTop = btn.getBoundingClientRect().top
         const btnLeft = btn.getBoundingClientRect().left
-
+        
         const elTop = el.getBoundingClientRect().top
         const elHeight = el.getBoundingClientRect().height
         const innerWidth = window.innerWidth
